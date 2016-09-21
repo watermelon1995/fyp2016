@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/devel
+
+Name: first_try
+Description: Description of first_try
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kin/fyp2016/ros/devel/lib 
+Requires: 

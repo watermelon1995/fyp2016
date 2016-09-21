@@ -1,0 +1,2 @@
+first_try
+-DCATKIN_DEVEL_PREFIX=/home/kin/fyp2016/ros/devel -DCMAKE_INSTALL_PREFIX=/home/kin/fyp2016/ros/install -G Unix Makefiles

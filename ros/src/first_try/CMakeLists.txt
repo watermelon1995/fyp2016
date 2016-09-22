@@ -197,3 +197,7 @@ add_dependencies(talker first_try_generate_messages_cpp)
 add_executable(listener src/helloworld_listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 add_dependencies(listener first_try_generate_messages_cpp)
+
+add_executable(kinMap src/kinMap.cpp)
+target_link_libraries(kinMap ${catkin_LIBRARIES})
+add_dependencies(kinMap first_try_generate_messages_cpp)

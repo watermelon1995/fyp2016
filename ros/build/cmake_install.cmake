@@ -117,7 +117,16 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/kin/fyp2016/ros/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_launchers/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_resources/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_simulator/cmake_install.cmake")
   INCLUDE("/home/kin/fyp2016/ros/build/first_try/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_parser/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_samples/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/cmake_install.cmake")
+  INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_gui/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

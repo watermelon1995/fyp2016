@@ -150,6 +150,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+first_try/CMakeFiles/kinMap.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/kinMap.dir/rule
+.PHONY : first_try/CMakeFiles/kinMap.dir/rule
+
+# Convenience name for target.
+kinMap: first_try/CMakeFiles/kinMap.dir/rule
+.PHONY : kinMap
+
+# fast build rule for target.
+kinMap/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/kinMap.dir/build.make first_try/CMakeFiles/kinMap.dir/build
+.PHONY : kinMap/fast
+
+# Convenience name for target.
 first_try/CMakeFiles/listener.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/listener.dir/rule
 .PHONY : first_try/CMakeFiles/listener.dir/rule
@@ -248,48 +262,6 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-first_try/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : first_try/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: first_try/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make first_try/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-first_try/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : first_try/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: first_try/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make first_try/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-first_try/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : first_try/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: first_try/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/std_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 first_try/CMakeFiles/talker.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/talker.dir/rule
 .PHONY : first_try/CMakeFiles/talker.dir/rule
@@ -351,6 +323,30 @@ src/helloworld_listener.cpp.s:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/src/helloworld_listener.cpp.s
 .PHONY : src/helloworld_listener.cpp.s
 
+src/kinMap.o: src/kinMap.cpp.o
+.PHONY : src/kinMap.o
+
+# target to build an object file
+src/kinMap.cpp.o:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/kinMap.dir/build.make first_try/CMakeFiles/kinMap.dir/src/kinMap.cpp.o
+.PHONY : src/kinMap.cpp.o
+
+src/kinMap.i: src/kinMap.cpp.i
+.PHONY : src/kinMap.i
+
+# target to preprocess a source file
+src/kinMap.cpp.i:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/kinMap.dir/build.make first_try/CMakeFiles/kinMap.dir/src/kinMap.cpp.i
+.PHONY : src/kinMap.cpp.i
+
+src/kinMap.s: src/kinMap.cpp.s
+.PHONY : src/kinMap.s
+
+# target to generate assembly for a file
+src/kinMap.cpp.s:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/kinMap.dir/build.make first_try/CMakeFiles/kinMap.dir/src/kinMap.cpp.s
+.PHONY : src/kinMap.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -361,6 +357,7 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... kinMap"
 	@echo "... list_install_components"
 	@echo "... listener"
 	@echo "... rebuild_cache"
@@ -370,9 +367,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... talker"
 	@echo "... test"
 	@echo "... src/helloworld.o"
@@ -381,6 +375,9 @@ help:
 	@echo "... src/helloworld_listener.o"
 	@echo "... src/helloworld_listener.i"
 	@echo "... src/helloworld_listener.s"
+	@echo "... src/kinMap.o"
+	@echo "... src/kinMap.i"
+	@echo "... src/kinMap.s"
 .PHONY : help
 
 

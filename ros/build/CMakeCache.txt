@@ -212,6 +212,12 @@ GTEST_MAIN_LIBRARY:FILEPATH=GTEST_MAIN_LIBRARY-NOTFOUND
 //Path to a library.
 GTEST_MAIN_LIBRARY_DEBUG:FILEPATH=GTEST_MAIN_LIBRARY_DEBUG-NOTFOUND
 
+//LSB Distrib tag
+LINUXMINT:BOOL=TRUE
+
+//LSB Distrib - codename tag
+LINUXMINT_ROSA:BOOL=TRUE
+
 //lsb_release executable was found
 LSB_FOUND:BOOL=TRUE
 
@@ -220,6 +226,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
@@ -234,10 +243,613 @@ Project_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build
 Project_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src
 
 //Path to a library.
+QT_ARTHURPLUGIN_PLUGIN_DEBUG:FILEPATH=QT_ARTHURPLUGIN_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_ARTHURPLUGIN_PLUGIN_RELEASE:FILEPATH=QT_ARTHURPLUGIN_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_CONTAINEREXTENSION_PLUGIN_DEBUG:FILEPATH=QT_CONTAINEREXTENSION_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_CONTAINEREXTENSION_PLUGIN_RELEASE:FILEPATH=QT_CONTAINEREXTENSION_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_CUSTOMWIDGETPLUGIN_PLUGIN_DEBUG:FILEPATH=QT_CUSTOMWIDGETPLUGIN_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_CUSTOMWIDGETPLUGIN_PLUGIN_RELEASE:FILEPATH=QT_CUSTOMWIDGETPLUGIN_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a program.
+QT_DBUSCPP2XML_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/qdbuscpp2xml
+
+//Path to a program.
+QT_DBUSXML2CPP_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/qdbusxml2cpp
+
+//Path to a program.
+QT_DESIGNER_EXECUTABLE:FILEPATH=QT_DESIGNER_EXECUTABLE-NOTFOUND
+
+//The location of the Qt docs
+QT_DOC_DIR:PATH=/usr/share/qt4/doc
+
+//Path to a program.
+QT_LINGUIST_EXECUTABLE:FILEPATH=QT_LINGUIST_EXECUTABLE-NOTFOUND
+
+//Path to a program.
+QT_LRELEASE_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/lrelease
+
+//Path to a program.
+QT_LUPDATE_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/lupdate
+
+//The location of the Qt mkspecs containing qconfig.pri
+QT_MKSPECS_DIR:PATH=/usr/share/qt4/mkspecs
+
+//Path to a program.
+QT_MOC_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/moc
+
+//Path to a library.
+QT_PHONONWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_PHONONWIDGETS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_PHONONWIDGETS_PLUGIN_RELEASE:FILEPATH=QT_PHONONWIDGETS_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a file.
+QT_PHONON_INCLUDE_DIR:PATH=QT_PHONON_INCLUDE_DIR-NOTFOUND
+
+//The Qt PHONON library
+QT_PHONON_LIBRARY:STRING=
+
+//Path to a library.
+QT_PHONON_LIBRARY_DEBUG:FILEPATH=QT_PHONON_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_PHONON_LIBRARY_RELEASE:FILEPATH=QT_PHONON_LIBRARY_RELEASE-NOTFOUND
+
+//The location of the Qt plugins
+QT_PLUGINS_DIR:PATH=/usr/lib/x86_64-linux-gnu/qt4/plugins
+
+//Path to a library.
+QT_QCNCODECS_PLUGIN_DEBUG:FILEPATH=QT_QCNCODECS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QCNCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqcncodecs.so
+
+//Path to a program.
+QT_QCOLLECTIONGENERATOR_EXECUTABLE:FILEPATH=QT_QCOLLECTIONGENERATOR_EXECUTABLE-NOTFOUND
+
+//Path to a library.
+QT_QCOREWLANBEARER_PLUGIN_DEBUG:FILEPATH=QT_QCOREWLANBEARER_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QCOREWLANBEARER_PLUGIN_RELEASE:FILEPATH=QT_QCOREWLANBEARER_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QDECLARATIVEVIEW_PLUGIN_DEBUG:FILEPATH=QT_QDECLARATIVEVIEW_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QDECLARATIVEVIEW_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/designer/libqdeclarativeview.so
+
+//Path to a library.
+QT_QDECORATIONDEFAULT_PLUGIN_DEBUG:FILEPATH=QT_QDECORATIONDEFAULT_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QDECORATIONDEFAULT_PLUGIN_RELEASE:FILEPATH=QT_QDECORATIONDEFAULT_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QDECORATIONWINDOWS_PLUGIN_DEBUG:FILEPATH=QT_QDECORATIONWINDOWS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QDECORATIONWINDOWS_PLUGIN_RELEASE:FILEPATH=QT_QDECORATIONWINDOWS_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QGENERICBEARER_PLUGIN_DEBUG:FILEPATH=QT_QGENERICBEARER_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QGENERICBEARER_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/bearer/libqgenericbearer.so
+
+//Path to a library.
+QT_QGIF_PLUGIN_DEBUG:FILEPATH=QT_QGIF_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QGIF_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqgif.so
+
+//Path to a library.
+QT_QGLGRAPHICSSYSTEM_PLUGIN_DEBUG:FILEPATH=QT_QGLGRAPHICSSYSTEM_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QGLGRAPHICSSYSTEM_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/graphicssystems/libqglgraphicssystem.so
+
+//Path to a library.
+QT_QICO_PLUGIN_DEBUG:FILEPATH=QT_QICO_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QICO_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqico.so
+
+//Path to a library.
+QT_QIMSW_MULTI_PLUGIN_DEBUG:FILEPATH=QT_QIMSW_MULTI_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QIMSW_MULTI_PLUGIN_RELEASE:FILEPATH=QT_QIMSW_MULTI_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QJPCODECS_PLUGIN_DEBUG:FILEPATH=QT_QJPCODECS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QJPCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqjpcodecs.so
+
+//Path to a library.
+QT_QJPEG_PLUGIN_DEBUG:FILEPATH=QT_QJPEG_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QJPEG_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqjpeg.so
+
+//Path to a library.
+QT_QKRCODECS_PLUGIN_DEBUG:FILEPATH=QT_QKRCODECS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QKRCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqkrcodecs.so
+
+//The qmake executable for the Qt installation to use
+QT_QMAKE_EXECUTABLE:FILEPATH=/usr/bin/qmake
+
+//Path to a library.
+QT_QMNG_PLUGIN_DEBUG:FILEPATH=QT_QMNG_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QMNG_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqmng.so
+
+//Path to a library.
+QT_QSQLDB2_PLUGIN_DEBUG:FILEPATH=QT_QSQLDB2_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLDB2_PLUGIN_RELEASE:FILEPATH=QT_QSQLDB2_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLIBASE_PLUGIN_DEBUG:FILEPATH=QT_QSQLIBASE_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLIBASE_PLUGIN_RELEASE:FILEPATH=QT_QSQLIBASE_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLITE2_PLUGIN_DEBUG:FILEPATH=QT_QSQLITE2_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLITE2_PLUGIN_RELEASE:FILEPATH=QT_QSQLITE2_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLITE_PLUGIN_DEBUG:FILEPATH=QT_QSQLITE_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLITE_PLUGIN_RELEASE:FILEPATH=QT_QSQLITE_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLMYSQL_PLUGIN_DEBUG:FILEPATH=QT_QSQLMYSQL_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLMYSQL_PLUGIN_RELEASE:FILEPATH=QT_QSQLMYSQL_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLOCI_PLUGIN_DEBUG:FILEPATH=QT_QSQLOCI_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLOCI_PLUGIN_RELEASE:FILEPATH=QT_QSQLOCI_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLODBC_PLUGIN_DEBUG:FILEPATH=QT_QSQLODBC_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLODBC_PLUGIN_RELEASE:FILEPATH=QT_QSQLODBC_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLPSQL_PLUGIN_DEBUG:FILEPATH=QT_QSQLPSQL_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLPSQL_PLUGIN_RELEASE:FILEPATH=QT_QSQLPSQL_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSQLTDS_PLUGIN_DEBUG:FILEPATH=QT_QSQLTDS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSQLTDS_PLUGIN_RELEASE:FILEPATH=QT_QSQLTDS_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QSVGICON_PLUGIN_DEBUG:FILEPATH=QT_QSVGICON_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSVGICON_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/iconengines/libqsvgicon.so
+
+//Path to a library.
+QT_QSVG_PLUGIN_DEBUG:FILEPATH=QT_QSVG_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QSVG_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqsvg.so
+
+//Path to a library.
+QT_QT3SUPPORTWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_QT3SUPPORTWIDGETS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QT3SUPPORTWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/designer/libqt3supportwidgets.so
+
+//Path to a file.
+QT_QT3SUPPORT_INCLUDE_DIR:PATH=/usr/include/qt4/Qt3Support
+
+//The Qt QT3SUPPORT library
+QT_QT3SUPPORT_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQt3Support.so
+
+//Path to a library.
+QT_QT3SUPPORT_LIBRARY_DEBUG:FILEPATH=QT_QT3SUPPORT_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QT3SUPPORT_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQt3Support.so
+
+//Path to a library.
+QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/accessible/libqtaccessiblecompatwidgets.so
+
+//Path to a library.
+QT_QTACCESSIBLEWIDGETS_PLUGIN_DEBUG:FILEPATH=QT_QTACCESSIBLEWIDGETS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTACCESSIBLEWIDGETS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/accessible/libqtaccessiblewidgets.so
+
+//Path to a file.
+QT_QTASSISTANTCLIENT_INCLUDE_DIR:PATH=QT_QTASSISTANTCLIENT_INCLUDE_DIR-NOTFOUND
+
+//The Qt QTASSISTANTCLIENT library
+QT_QTASSISTANTCLIENT_LIBRARY:STRING=
+
+//Path to a library.
+QT_QTASSISTANTCLIENT_LIBRARY_DEBUG:FILEPATH=QT_QTASSISTANTCLIENT_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTASSISTANTCLIENT_LIBRARY_RELEASE:FILEPATH=QT_QTASSISTANTCLIENT_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+QT_QTASSISTANT_INCLUDE_DIR:PATH=QT_QTASSISTANT_INCLUDE_DIR-NOTFOUND
+
+//The Qt QTASSISTANT library
+QT_QTASSISTANT_LIBRARY:STRING=
+
+//Path to a library.
+QT_QTASSISTANT_LIBRARY_DEBUG:FILEPATH=QT_QTASSISTANT_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTASSISTANT_LIBRARY_RELEASE:FILEPATH=QT_QTASSISTANT_LIBRARY_RELEASE-NOTFOUND
+
+//The Qt QTCLUCENE library
+QT_QTCLUCENE_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtCLucene.so
+
+//Path to a library.
+QT_QTCLUCENE_LIBRARY_DEBUG:FILEPATH=QT_QTCLUCENE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTCLUCENE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtCLucene.so
+
+//Path to a file.
+QT_QTCORE_INCLUDE_DIR:PATH=/usr/include/qt4/QtCore
+
+//The Qt QTCORE library
+QT_QTCORE_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtCore.so
+
+//Path to a library.
+QT_QTCORE_LIBRARY_DEBUG:FILEPATH=QT_QTCORE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTCORE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtCore.so
+
+//Path to a file.
+QT_QTDBUS_INCLUDE_DIR:PATH=/usr/include/qt4/QtDBus
+
+//The Qt QTDBUS library
+QT_QTDBUS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDBus.so
+
+//Path to a library.
+QT_QTDBUS_LIBRARY_DEBUG:FILEPATH=QT_QTDBUS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTDBUS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDBus.so
+
+//Path to a file.
+QT_QTDECLARATIVE_INCLUDE_DIR:PATH=/usr/include/qt4/QtDeclarative
+
+//The Qt QTDECLARATIVE library
+QT_QTDECLARATIVE_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+
+//Path to a library.
+QT_QTDECLARATIVE_LIBRARY_DEBUG:FILEPATH=QT_QTDECLARATIVE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTDECLARATIVE_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+
+//Path to a file.
+QT_QTDESIGNERCOMPONENTS_INCLUDE_DIR:PATH=/usr/include/qt4/QtDesigner
+
+//The Qt QTDESIGNERCOMPONENTS library
+QT_QTDESIGNERCOMPONENTS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDesignerComponents.so
+
+//Path to a library.
+QT_QTDESIGNERCOMPONENTS_LIBRARY_DEBUG:FILEPATH=QT_QTDESIGNERCOMPONENTS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTDESIGNERCOMPONENTS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDesignerComponents.so
+
+//Path to a file.
+QT_QTDESIGNER_INCLUDE_DIR:PATH=/usr/include/qt4/QtDesigner
+
+//The Qt QTDESIGNER library
+QT_QTDESIGNER_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtDesigner.so
+
+//Path to a library.
+QT_QTDESIGNER_LIBRARY_DEBUG:FILEPATH=QT_QTDESIGNER_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTDESIGNER_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtDesigner.so
+
+//Path to a file.
+QT_QTGUI_INCLUDE_DIR:PATH=/usr/include/qt4/QtGui
+
+//The Qt QTGUI library
+QT_QTGUI_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtGui.so
+
+//Path to a library.
+QT_QTGUI_LIBRARY_DEBUG:FILEPATH=QT_QTGUI_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTGUI_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtGui.so
+
+//Path to a file.
+QT_QTHELP_INCLUDE_DIR:PATH=/usr/include/qt4/QtHelp
+
+//The Qt QTHELP library
+QT_QTHELP_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtHelp.so
+
+//Path to a library.
+QT_QTHELP_LIBRARY_DEBUG:FILEPATH=QT_QTHELP_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTHELP_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtHelp.so
+
+//Path to a library.
+QT_QTIFF_PLUGIN_DEBUG:FILEPATH=QT_QTIFF_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTIFF_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/imageformats/libqtiff.so
+
+//Path to a file.
+QT_QTMOTIF_INCLUDE_DIR:PATH=QT_QTMOTIF_INCLUDE_DIR-NOTFOUND
+
+//The Qt QTMOTIF library
+QT_QTMOTIF_LIBRARY:STRING=
+
+//Path to a library.
+QT_QTMOTIF_LIBRARY_DEBUG:FILEPATH=QT_QTMOTIF_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTMOTIF_LIBRARY_RELEASE:FILEPATH=QT_QTMOTIF_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+QT_QTMULTIMEDIA_INCLUDE_DIR:PATH=QT_QTMULTIMEDIA_INCLUDE_DIR-NOTFOUND
+
+//The Qt QTMULTIMEDIA library
+QT_QTMULTIMEDIA_LIBRARY:STRING=
+
+//Path to a library.
+QT_QTMULTIMEDIA_LIBRARY_DEBUG:FILEPATH=QT_QTMULTIMEDIA_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTMULTIMEDIA_LIBRARY_RELEASE:FILEPATH=QT_QTMULTIMEDIA_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+QT_QTNETWORK_INCLUDE_DIR:PATH=/usr/include/qt4/QtNetwork
+
+//The Qt QTNETWORK library
+QT_QTNETWORK_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtNetwork.so
+
+//Path to a library.
+QT_QTNETWORK_LIBRARY_DEBUG:FILEPATH=QT_QTNETWORK_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTNETWORK_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtNetwork.so
+
+//Path to a file.
+QT_QTNSPLUGIN_INCLUDE_DIR:PATH=QT_QTNSPLUGIN_INCLUDE_DIR-NOTFOUND
+
+//The Qt QTNSPLUGIN library
+QT_QTNSPLUGIN_LIBRARY:STRING=
+
+//Path to a library.
+QT_QTNSPLUGIN_LIBRARY_DEBUG:FILEPATH=QT_QTNSPLUGIN_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTNSPLUGIN_LIBRARY_RELEASE:FILEPATH=QT_QTNSPLUGIN_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+QT_QTOPENGL_INCLUDE_DIR:PATH=/usr/include/qt4/QtOpenGL
+
+//The Qt QTOPENGL library
+QT_QTOPENGL_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtOpenGL.so
+
+//Path to a library.
+QT_QTOPENGL_LIBRARY_DEBUG:FILEPATH=QT_QTOPENGL_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTOPENGL_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtOpenGL.so
+
+//Path to a library.
+QT_QTRACEGRAPHICSSYSTEM_PLUGIN_DEBUG:FILEPATH=QT_QTRACEGRAPHICSSYSTEM_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTRACEGRAPHICSSYSTEM_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/graphicssystems/libqtracegraphicssystem.so
+
+//Path to a library.
+QT_QTSCRIPTDBUS_PLUGIN_DEBUG:FILEPATH=QT_QTSCRIPTDBUS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTSCRIPTDBUS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/script/libqtscriptdbus.so
+
+//Path to a file.
+QT_QTSCRIPTTOOLS_INCLUDE_DIR:PATH=/usr/include/qt4/QtScriptTools
+
+//The Qt QTSCRIPTTOOLS library
+QT_QTSCRIPTTOOLS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtScriptTools.so
+
+//Path to a library.
+QT_QTSCRIPTTOOLS_LIBRARY_DEBUG:FILEPATH=QT_QTSCRIPTTOOLS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTSCRIPTTOOLS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtScriptTools.so
+
+//Path to a file.
+QT_QTSCRIPT_INCLUDE_DIR:PATH=/usr/include/qt4/QtScript
+
+//The Qt QTSCRIPT library
+QT_QTSCRIPT_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtScript.so
+
+//Path to a library.
+QT_QTSCRIPT_LIBRARY_DEBUG:FILEPATH=QT_QTSCRIPT_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTSCRIPT_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtScript.so
+
+//Path to a file.
+QT_QTSQL_INCLUDE_DIR:PATH=/usr/include/qt4/QtSql
+
+//The Qt QTSQL library
+QT_QTSQL_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtSql.so
+
+//Path to a library.
+QT_QTSQL_LIBRARY_DEBUG:FILEPATH=QT_QTSQL_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTSQL_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtSql.so
+
+//Path to a file.
+QT_QTSVG_INCLUDE_DIR:PATH=/usr/include/qt4/QtSvg
+
+//The Qt QTSVG library
+QT_QTSVG_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtSvg.so
+
+//Path to a library.
+QT_QTSVG_LIBRARY_DEBUG:FILEPATH=QT_QTSVG_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTSVG_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtSvg.so
+
+//Path to a file.
+QT_QTTEST_INCLUDE_DIR:PATH=/usr/include/qt4/QtTest
+
+//The Qt QTTEST library
+QT_QTTEST_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtTest.so
+
+//Path to a library.
+QT_QTTEST_LIBRARY_DEBUG:FILEPATH=QT_QTTEST_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTTEST_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtTest.so
+
+//Path to a file.
+QT_QTUITOOLS_INCLUDE_DIR:PATH=/usr/include/qt4/QtUiTools
+
+//The Qt QTUITOOLS library
+QT_QTUITOOLS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtUiTools.a
+
+//Path to a library.
+QT_QTUITOOLS_LIBRARY_DEBUG:FILEPATH=QT_QTUITOOLS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTUITOOLS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtUiTools.a
+
+//Path to a library.
+QT_QTWCODECS_PLUGIN_DEBUG:FILEPATH=QT_QTWCODECS_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTWCODECS_PLUGIN_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/plugins/codecs/libqtwcodecs.so
+
+//Path to a file.
+QT_QTWEBKIT_INCLUDE_DIR:PATH=QT_QTWEBKIT_INCLUDE_DIR-NOTFOUND
+
+//The Qt QTWEBKIT library
+QT_QTWEBKIT_LIBRARY:STRING=
+
+//Path to a library.
+QT_QTWEBKIT_LIBRARY_DEBUG:FILEPATH=QT_QTWEBKIT_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTWEBKIT_LIBRARY_RELEASE:FILEPATH=QT_QTWEBKIT_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+QT_QTXMLPATTERNS_INCLUDE_DIR:PATH=/usr/include/qt4/QtXmlPatterns
+
+//The Qt QTXMLPATTERNS library
+QT_QTXMLPATTERNS_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+
+//Path to a library.
+QT_QTXMLPATTERNS_LIBRARY_DEBUG:FILEPATH=QT_QTXMLPATTERNS_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTXMLPATTERNS_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+
+//Path to a file.
+QT_QTXML_INCLUDE_DIR:PATH=/usr/include/qt4/QtXml
+
+//The Qt QTXML library
+QT_QTXML_LIBRARY:STRING=/usr/lib/x86_64-linux-gnu/libQtXml.so
+
+//Path to a library.
+QT_QTXML_LIBRARY_DEBUG:FILEPATH=QT_QTXML_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QTXML_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libQtXml.so
+
+//Path to a library.
+QT_QWEBVIEW_PLUGIN_DEBUG:FILEPATH=QT_QWEBVIEW_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QWEBVIEW_PLUGIN_RELEASE:FILEPATH=QT_QWEBVIEW_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
+QT_QWSTSLIBMOUSEHANDLER_PLUGIN_DEBUG:FILEPATH=QT_QWSTSLIBMOUSEHANDLER_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_QWSTSLIBMOUSEHANDLER_PLUGIN_RELEASE:FILEPATH=QT_QWSTSLIBMOUSEHANDLER_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a program.
+QT_RCC_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/rcc
+
+//Path to a library.
+QT_TASKMENUEXTENSION_PLUGIN_DEBUG:FILEPATH=QT_TASKMENUEXTENSION_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_TASKMENUEXTENSION_PLUGIN_RELEASE:FILEPATH=QT_TASKMENUEXTENSION_PLUGIN_RELEASE-NOTFOUND
+
+//The location of the Qt translations
+QT_TRANSLATIONS_DIR:PATH=/usr/share/qt4/translations
+
+//Path to a program.
+QT_UIC3_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/uic3
+
+//Path to a program.
+QT_UIC_EXECUTABLE:FILEPATH=/usr/lib/x86_64-linux-gnu/qt4/bin/uic
+
+//Path to a library.
+QT_WORLDTIMECLOCKPLUGIN_PLUGIN_DEBUG:FILEPATH=QT_WORLDTIMECLOCKPLUGIN_PLUGIN_DEBUG-NOTFOUND
+
+//Path to a library.
+QT_WORLDTIMECLOCKPLUGIN_PLUGIN_RELEASE:FILEPATH=QT_WORLDTIMECLOCKPLUGIN_PLUGIN_RELEASE-NOTFOUND
+
+//Path to a library.
 RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 
 //Enable debian style python package layout
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
+
+//Path to a file.
+TinyXML_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+TinyXML_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinyxml.so
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -251,8 +863,29 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Path to a file.
+_file_name:FILEPATH=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_server/test/functional/interfaces_test.launch
+
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/indigo/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/indigo/share/actionlib_msgs/cmake
+
+//The directory containing a CMake configuration file for bond.
+bond_DIR:PATH=/opt/ros/indigo/share/bond/cmake
+
+//The directory containing a CMake configuration file for bondcpp.
+bondcpp_DIR:PATH=/opt/ros/indigo/share/bondcpp/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/indigo/share/class_loader/cmake
+
+//The directory containing a CMake configuration file for cmake_modules.
+cmake_modules_DIR:PATH=/opt/ros/indigo/share/cmake_modules/cmake
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
@@ -262,6 +895,21 @@ first_try_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/first_try
 
 //Value Computed by CMake
 first_try_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/first_try
+
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/indigo/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/indigo/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/indigo/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/indigo/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/gtest
@@ -289,10 +937,28 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/indigo/lib/libimage_loader.so
+
+//The directory containing a CMake configuration file for map_server.
+map_server_DIR:PATH=/opt/ros/indigo/share/map_server/cmake
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for nodelet.
+nodelet_DIR:PATH=/opt/ros/indigo/share/nodelet/cmake
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
@@ -306,14 +972,161 @@ roscpp_serialization_DIR:PATH=/opt/ros/indigo/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/indigo/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/indigo/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/indigo/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/indigo/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/indigo/share/rospy/cmake
+
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/indigo/share/rostest/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/indigo/share/rostime/cmake
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for smclib.
+smclib_DIR:PATH=/opt/ros/indigo/share/smclib/cmake
+
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
+
+//Dependencies for the target
+stdr_co2_sensor_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_sensor_base;
+
+//Value Computed by CMake
+stdr_gui_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_gui
+
+//Value Computed by CMake
+stdr_gui_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_gui
+
+//Dependencies for the target
+stdr_handle_robot_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Dependencies for the target
+stdr_ideal_motion_controller_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Dependencies for the target
+stdr_laser_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_sensor_base;
+
+//Value Computed by CMake
+stdr_launchers_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_launchers
+
+//Value Computed by CMake
+stdr_launchers_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_launchers
+
+//Dependencies for the target
+stdr_map_loader_LIB_DEPENDS:STATIC=general;yaml-cpp;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libimage_loader.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Dependencies for the target
+stdr_map_server_LIB_DEPENDS:STATIC=general;stdr_map_loader;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libimage_loader.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Dependencies for the target
+stdr_microphone_sensor_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_sensor_base;
+
+//Value Computed by CMake
+stdr_msgs_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs
+
+//The directory containing a CMake configuration file for stdr_msgs.
+stdr_msgs_DIR:PATH=/home/kin/fyp2016/ros/devel/share/stdr_msgs/cmake
+
+//Value Computed by CMake
+stdr_msgs_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs
+
+//Dependencies for the target
+stdr_omni_motion_controller_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Value Computed by CMake
+stdr_parser_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_parser
+
+//The directory containing a CMake configuration file for stdr_parser.
+stdr_parser_DIR:PATH=/home/kin/fyp2016/ros/devel/share/stdr_parser/cmake
+
+//Dependencies for the target
+stdr_parser_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;yaml-cpp;
+
+//Value Computed by CMake
+stdr_parser_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_parser
+
+//Value Computed by CMake
+stdr_resources_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_resources
+
+//Value Computed by CMake
+stdr_resources_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_resources
+
+//Dependencies for the target
+stdr_rfid_reader_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_sensor_base;
+
+//Value Computed by CMake
+stdr_robot_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot
+
+//The directory containing a CMake configuration file for stdr_robot.
+stdr_robot_DIR:PATH=/home/kin/fyp2016/ros/devel/share/stdr_robot/cmake
+
+//Value Computed by CMake
+stdr_robot_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_robot
+
+//Dependencies for the target
+stdr_robot_nodelet_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_laser;general;stdr_sonar;general;stdr_rfid_reader;general;stdr_co2_sensor;general;stdr_thermal_sensor;general;stdr_microphone_sensor;general;stdr_ideal_motion_controller;general;stdr_omni_motion_controller;
+
+//Value Computed by CMake
+stdr_samples_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_samples
+
+//Value Computed by CMake
+stdr_samples_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_samples
+
+//Dependencies for the target
+stdr_sensor_base_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Value Computed by CMake
+stdr_server_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_server
+
+//The directory containing a CMake configuration file for stdr_server.
+stdr_server_DIR:PATH=/home/kin/fyp2016/ros/devel/share/stdr_server/cmake
+
+//Dependencies for the target
+stdr_server_LIB_DEPENDS:STATIC=general;stdr_map_server;general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libimage_loader.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libtf2.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;
+
+//Value Computed by CMake
+stdr_server_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_server
+
+//Value Computed by CMake
+stdr_simulator_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/stdr_simulator/stdr_simulator
+
+//Value Computed by CMake
+stdr_simulator_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/stdr_simulator/stdr_simulator
+
+//Dependencies for the target
+stdr_sonar_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_sensor_base;
+
+//Dependencies for the target
+stdr_thermal_sensor_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libnodeletlib.so;general;/opt/ros/indigo/lib/libbondcpp.so;general;/usr/lib/x86_64-linux-gnu/libuuid.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libtf.so;general;/opt/ros/indigo/lib/libtf2_ros.so;general;/opt/ros/indigo/lib/libactionlib.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libtf2.so;general;stdr_parser;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;stdr_sensor_base;
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/indigo/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/indigo/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/indigo/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/indigo/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/opt/ros/indigo/share/tf/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/indigo/share/visualization_msgs/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/indigo/share/xmlrpcpp/cmake
@@ -420,7 +1233,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -461,10 +1274,16 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.26()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.6()]
+//Details about finding Qt4
+FIND_PACKAGE_MESSAGE_DETAILS_Qt4:INTERNAL=[/usr/bin/qmake][/usr/lib/x86_64-linux-gnu/qt4/bin/moc][/usr/lib/x86_64-linux-gnu/qt4/bin/rcc][/usr/include/qt4][/usr/lib/x86_64-linux-gnu][/usr/include/qt4/QtCore][/usr/lib/x86_64-linux-gnu/libQtCore.so][/usr/include/qt4/QtGui][/usr/lib/x86_64-linux-gnu/libQtGui.so][/usr/include/qt4/QtUiTools][/usr/lib/x86_64-linux-gnu/libQtUiTools.a][/usr/lib/x86_64-linux-gnu/qt4/bin/uic][v4.8.6()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Details about finding TinyXML
+FIND_PACKAGE_MESSAGE_DETAILS_TinyXML:INTERNAL=[/usr/lib/x86_64-linux-gnu/libtinyxml.so][/usr/include][v()]
 GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
@@ -480,10 +1299,496 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+NEW_YAMLCPP_CFLAGS:INTERNAL=
+NEW_YAMLCPP_CFLAGS_I:INTERNAL=
+NEW_YAMLCPP_CFLAGS_OTHER:INTERNAL=
+NEW_YAMLCPP_FOUND:INTERNAL=1
+NEW_YAMLCPP_INCLUDEDIR:INTERNAL=/usr/include
+NEW_YAMLCPP_INCLUDE_DIRS:INTERNAL=
+NEW_YAMLCPP_LDFLAGS:INTERNAL=-lyaml-cpp
+NEW_YAMLCPP_LDFLAGS_OTHER:INTERNAL=
+NEW_YAMLCPP_LIBDIR:INTERNAL=
+NEW_YAMLCPP_LIBRARIES:INTERNAL=yaml-cpp
+NEW_YAMLCPP_LIBRARY_DIRS:INTERNAL=
+NEW_YAMLCPP_LIBS:INTERNAL=
+NEW_YAMLCPP_LIBS_L:INTERNAL=
+NEW_YAMLCPP_LIBS_OTHER:INTERNAL=
+NEW_YAMLCPP_LIBS_PATHS:INTERNAL=
+NEW_YAMLCPP_PREFIX:INTERNAL=/usr
+NEW_YAMLCPP_STATIC_CFLAGS:INTERNAL=
+NEW_YAMLCPP_STATIC_CFLAGS_I:INTERNAL=
+NEW_YAMLCPP_STATIC_CFLAGS_OTHER:INTERNAL=
+NEW_YAMLCPP_STATIC_INCLUDE_DIRS:INTERNAL=
+NEW_YAMLCPP_STATIC_LDFLAGS:INTERNAL=-lyaml-cpp
+NEW_YAMLCPP_STATIC_LDFLAGS_OTHER:INTERNAL=
+NEW_YAMLCPP_STATIC_LIBDIR:INTERNAL=
+NEW_YAMLCPP_STATIC_LIBRARIES:INTERNAL=yaml-cpp
+NEW_YAMLCPP_STATIC_LIBRARY_DIRS:INTERNAL=
+NEW_YAMLCPP_STATIC_LIBS:INTERNAL=
+NEW_YAMLCPP_STATIC_LIBS_L:INTERNAL=
+NEW_YAMLCPP_STATIC_LIBS_OTHER:INTERNAL=
+NEW_YAMLCPP_STATIC_LIBS_PATHS:INTERNAL=
+NEW_YAMLCPP_VERSION:INTERNAL=0.5.1
+NEW_YAMLCPP_yaml-cpp_INCLUDEDIR:INTERNAL=
+NEW_YAMLCPP_yaml-cpp_LIBDIR:INTERNAL=
+NEW_YAMLCPP_yaml-cpp_PREFIX:INTERNAL=
+NEW_YAMLCPP_yaml-cpp_VERSION:INTERNAL=
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+//ADVANCED property for variable: QT_ARTHURPLUGIN_PLUGIN_DEBUG
+QT_ARTHURPLUGIN_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_ARTHURPLUGIN_PLUGIN_RELEASE
+QT_ARTHURPLUGIN_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+QT_BINARY_DIR:INTERNAL=/usr/lib/x86_64-linux-gnu/qt4/bin
+//ADVANCED property for variable: QT_CONTAINEREXTENSION_PLUGIN_DEBUG
+QT_CONTAINEREXTENSION_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_CONTAINEREXTENSION_PLUGIN_RELEASE
+QT_CONTAINEREXTENSION_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_CUSTOMWIDGETPLUGIN_PLUGIN_DEBUG
+QT_CUSTOMWIDGETPLUGIN_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_CUSTOMWIDGETPLUGIN_PLUGIN_RELEASE
+QT_CUSTOMWIDGETPLUGIN_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_DBUSCPP2XML_EXECUTABLE
+QT_DBUSCPP2XML_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_DBUSXML2CPP_EXECUTABLE
+QT_DBUSXML2CPP_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_DESIGNER_EXECUTABLE
+QT_DESIGNER_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_DOC_DIR
+QT_DOC_DIR-ADVANCED:INTERNAL=1
+QT_HEADERS_DIR:INTERNAL=/usr/include/qt4
+//ADVANCED property for variable: QT_LIBRARY_DIR
+QT_LIBRARY_DIR-ADVANCED:INTERNAL=1
+//Qt library dir
+QT_LIBRARY_DIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+//ADVANCED property for variable: QT_LINGUIST_EXECUTABLE
+QT_LINGUIST_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_LRELEASE_EXECUTABLE
+QT_LRELEASE_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_LUPDATE_EXECUTABLE
+QT_LUPDATE_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_MKSPECS_DIR
+QT_MKSPECS_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_MOC_EXECUTABLE
+QT_MOC_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PHONONWIDGETS_PLUGIN_DEBUG
+QT_PHONONWIDGETS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PHONONWIDGETS_PLUGIN_RELEASE
+QT_PHONONWIDGETS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PHONON_INCLUDE_DIR
+QT_PHONON_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PHONON_LIBRARY
+QT_PHONON_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PHONON_LIBRARY_DEBUG
+QT_PHONON_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PHONON_LIBRARY_RELEASE
+QT_PHONON_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_PLUGINS_DIR
+QT_PLUGINS_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QCNCODECS_PLUGIN_DEBUG
+QT_QCNCODECS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QCNCODECS_PLUGIN_RELEASE
+QT_QCNCODECS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QCOLLECTIONGENERATOR_EXECUTABLE
+QT_QCOLLECTIONGENERATOR_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QCOREWLANBEARER_PLUGIN_DEBUG
+QT_QCOREWLANBEARER_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QCOREWLANBEARER_PLUGIN_RELEASE
+QT_QCOREWLANBEARER_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QDECLARATIVEVIEW_PLUGIN_DEBUG
+QT_QDECLARATIVEVIEW_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QDECLARATIVEVIEW_PLUGIN_RELEASE
+QT_QDECLARATIVEVIEW_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QDECORATIONDEFAULT_PLUGIN_DEBUG
+QT_QDECORATIONDEFAULT_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QDECORATIONDEFAULT_PLUGIN_RELEASE
+QT_QDECORATIONDEFAULT_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QDECORATIONWINDOWS_PLUGIN_DEBUG
+QT_QDECORATIONWINDOWS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QDECORATIONWINDOWS_PLUGIN_RELEASE
+QT_QDECORATIONWINDOWS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QGENERICBEARER_PLUGIN_DEBUG
+QT_QGENERICBEARER_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QGENERICBEARER_PLUGIN_RELEASE
+QT_QGENERICBEARER_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QGIF_PLUGIN_DEBUG
+QT_QGIF_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QGIF_PLUGIN_RELEASE
+QT_QGIF_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QGLGRAPHICSSYSTEM_PLUGIN_DEBUG
+QT_QGLGRAPHICSSYSTEM_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QGLGRAPHICSSYSTEM_PLUGIN_RELEASE
+QT_QGLGRAPHICSSYSTEM_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QICO_PLUGIN_DEBUG
+QT_QICO_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QICO_PLUGIN_RELEASE
+QT_QICO_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QIMSW_MULTI_PLUGIN_DEBUG
+QT_QIMSW_MULTI_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QIMSW_MULTI_PLUGIN_RELEASE
+QT_QIMSW_MULTI_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QJPCODECS_PLUGIN_DEBUG
+QT_QJPCODECS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QJPCODECS_PLUGIN_RELEASE
+QT_QJPCODECS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QJPEG_PLUGIN_DEBUG
+QT_QJPEG_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QJPEG_PLUGIN_RELEASE
+QT_QJPEG_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QKRCODECS_PLUGIN_DEBUG
+QT_QKRCODECS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QKRCODECS_PLUGIN_RELEASE
+QT_QKRCODECS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QMNG_PLUGIN_DEBUG
+QT_QMNG_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QMNG_PLUGIN_RELEASE
+QT_QMNG_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLDB2_PLUGIN_DEBUG
+QT_QSQLDB2_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLDB2_PLUGIN_RELEASE
+QT_QSQLDB2_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLIBASE_PLUGIN_DEBUG
+QT_QSQLIBASE_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLIBASE_PLUGIN_RELEASE
+QT_QSQLIBASE_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLITE2_PLUGIN_DEBUG
+QT_QSQLITE2_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLITE2_PLUGIN_RELEASE
+QT_QSQLITE2_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLITE_PLUGIN_DEBUG
+QT_QSQLITE_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLITE_PLUGIN_RELEASE
+QT_QSQLITE_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLMYSQL_PLUGIN_DEBUG
+QT_QSQLMYSQL_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLMYSQL_PLUGIN_RELEASE
+QT_QSQLMYSQL_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLOCI_PLUGIN_DEBUG
+QT_QSQLOCI_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLOCI_PLUGIN_RELEASE
+QT_QSQLOCI_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLODBC_PLUGIN_DEBUG
+QT_QSQLODBC_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLODBC_PLUGIN_RELEASE
+QT_QSQLODBC_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLPSQL_PLUGIN_DEBUG
+QT_QSQLPSQL_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLPSQL_PLUGIN_RELEASE
+QT_QSQLPSQL_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLTDS_PLUGIN_DEBUG
+QT_QSQLTDS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSQLTDS_PLUGIN_RELEASE
+QT_QSQLTDS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSVGICON_PLUGIN_DEBUG
+QT_QSVGICON_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSVGICON_PLUGIN_RELEASE
+QT_QSVGICON_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSVG_PLUGIN_DEBUG
+QT_QSVG_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QSVG_PLUGIN_RELEASE
+QT_QSVG_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QT3SUPPORTWIDGETS_PLUGIN_DEBUG
+QT_QT3SUPPORTWIDGETS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QT3SUPPORTWIDGETS_PLUGIN_RELEASE
+QT_QT3SUPPORTWIDGETS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QT3SUPPORT_INCLUDE_DIR
+QT_QT3SUPPORT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QT3SUPPORT_LIBRARY
+QT_QT3SUPPORT_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QT3SUPPORT_LIBRARY_DEBUG
+QT_QT3SUPPORT_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QT3SUPPORT_LIBRARY_RELEASE
+QT_QT3SUPPORT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_DEBUG
+QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_RELEASE
+QT_QTACCESSIBLECOMPATWIDGETS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTACCESSIBLEWIDGETS_PLUGIN_DEBUG
+QT_QTACCESSIBLEWIDGETS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTACCESSIBLEWIDGETS_PLUGIN_RELEASE
+QT_QTACCESSIBLEWIDGETS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANTCLIENT_INCLUDE_DIR
+QT_QTASSISTANTCLIENT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANTCLIENT_LIBRARY
+QT_QTASSISTANTCLIENT_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANTCLIENT_LIBRARY_DEBUG
+QT_QTASSISTANTCLIENT_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANTCLIENT_LIBRARY_RELEASE
+QT_QTASSISTANTCLIENT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANT_INCLUDE_DIR
+QT_QTASSISTANT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANT_LIBRARY
+QT_QTASSISTANT_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANT_LIBRARY_DEBUG
+QT_QTASSISTANT_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTASSISTANT_LIBRARY_RELEASE
+QT_QTASSISTANT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCLUCENE_LIBRARY
+QT_QTCLUCENE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCLUCENE_LIBRARY_DEBUG
+QT_QTCLUCENE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCLUCENE_LIBRARY_RELEASE
+QT_QTCLUCENE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCORE_INCLUDE_DIR
+QT_QTCORE_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCORE_LIBRARY
+QT_QTCORE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCORE_LIBRARY_DEBUG
+QT_QTCORE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTCORE_LIBRARY_RELEASE
+QT_QTCORE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDBUS_INCLUDE_DIR
+QT_QTDBUS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDBUS_LIBRARY
+QT_QTDBUS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDBUS_LIBRARY_DEBUG
+QT_QTDBUS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDBUS_LIBRARY_RELEASE
+QT_QTDBUS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDECLARATIVE_INCLUDE_DIR
+QT_QTDECLARATIVE_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDECLARATIVE_LIBRARY
+QT_QTDECLARATIVE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDECLARATIVE_LIBRARY_DEBUG
+QT_QTDECLARATIVE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDECLARATIVE_LIBRARY_RELEASE
+QT_QTDECLARATIVE_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNERCOMPONENTS_INCLUDE_DIR
+QT_QTDESIGNERCOMPONENTS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNERCOMPONENTS_LIBRARY
+QT_QTDESIGNERCOMPONENTS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNERCOMPONENTS_LIBRARY_DEBUG
+QT_QTDESIGNERCOMPONENTS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNERCOMPONENTS_LIBRARY_RELEASE
+QT_QTDESIGNERCOMPONENTS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNER_INCLUDE_DIR
+QT_QTDESIGNER_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNER_LIBRARY
+QT_QTDESIGNER_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNER_LIBRARY_DEBUG
+QT_QTDESIGNER_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTDESIGNER_LIBRARY_RELEASE
+QT_QTDESIGNER_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTGUI_INCLUDE_DIR
+QT_QTGUI_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTGUI_LIBRARY
+QT_QTGUI_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTGUI_LIBRARY_DEBUG
+QT_QTGUI_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTGUI_LIBRARY_RELEASE
+QT_QTGUI_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTHELP_INCLUDE_DIR
+QT_QTHELP_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTHELP_LIBRARY
+QT_QTHELP_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTHELP_LIBRARY_DEBUG
+QT_QTHELP_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTHELP_LIBRARY_RELEASE
+QT_QTHELP_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTIFF_PLUGIN_DEBUG
+QT_QTIFF_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTIFF_PLUGIN_RELEASE
+QT_QTIFF_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMOTIF_INCLUDE_DIR
+QT_QTMOTIF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMOTIF_LIBRARY
+QT_QTMOTIF_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMOTIF_LIBRARY_DEBUG
+QT_QTMOTIF_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMOTIF_LIBRARY_RELEASE
+QT_QTMOTIF_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMULTIMEDIA_INCLUDE_DIR
+QT_QTMULTIMEDIA_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMULTIMEDIA_LIBRARY
+QT_QTMULTIMEDIA_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMULTIMEDIA_LIBRARY_DEBUG
+QT_QTMULTIMEDIA_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTMULTIMEDIA_LIBRARY_RELEASE
+QT_QTMULTIMEDIA_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNETWORK_INCLUDE_DIR
+QT_QTNETWORK_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNETWORK_LIBRARY
+QT_QTNETWORK_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNETWORK_LIBRARY_DEBUG
+QT_QTNETWORK_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNETWORK_LIBRARY_RELEASE
+QT_QTNETWORK_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNSPLUGIN_INCLUDE_DIR
+QT_QTNSPLUGIN_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNSPLUGIN_LIBRARY
+QT_QTNSPLUGIN_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNSPLUGIN_LIBRARY_DEBUG
+QT_QTNSPLUGIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTNSPLUGIN_LIBRARY_RELEASE
+QT_QTNSPLUGIN_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTOPENGL_INCLUDE_DIR
+QT_QTOPENGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTOPENGL_LIBRARY
+QT_QTOPENGL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTOPENGL_LIBRARY_DEBUG
+QT_QTOPENGL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTOPENGL_LIBRARY_RELEASE
+QT_QTOPENGL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTRACEGRAPHICSSYSTEM_PLUGIN_DEBUG
+QT_QTRACEGRAPHICSSYSTEM_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTRACEGRAPHICSSYSTEM_PLUGIN_RELEASE
+QT_QTRACEGRAPHICSSYSTEM_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPTDBUS_PLUGIN_DEBUG
+QT_QTSCRIPTDBUS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPTDBUS_PLUGIN_RELEASE
+QT_QTSCRIPTDBUS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPTTOOLS_INCLUDE_DIR
+QT_QTSCRIPTTOOLS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPTTOOLS_LIBRARY
+QT_QTSCRIPTTOOLS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPTTOOLS_LIBRARY_DEBUG
+QT_QTSCRIPTTOOLS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPTTOOLS_LIBRARY_RELEASE
+QT_QTSCRIPTTOOLS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPT_INCLUDE_DIR
+QT_QTSCRIPT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPT_LIBRARY
+QT_QTSCRIPT_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPT_LIBRARY_DEBUG
+QT_QTSCRIPT_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSCRIPT_LIBRARY_RELEASE
+QT_QTSCRIPT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSQL_INCLUDE_DIR
+QT_QTSQL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSQL_LIBRARY
+QT_QTSQL_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSQL_LIBRARY_DEBUG
+QT_QTSQL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSQL_LIBRARY_RELEASE
+QT_QTSQL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSVG_INCLUDE_DIR
+QT_QTSVG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSVG_LIBRARY
+QT_QTSVG_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSVG_LIBRARY_DEBUG
+QT_QTSVG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTSVG_LIBRARY_RELEASE
+QT_QTSVG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTTEST_INCLUDE_DIR
+QT_QTTEST_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTTEST_LIBRARY
+QT_QTTEST_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTTEST_LIBRARY_DEBUG
+QT_QTTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTTEST_LIBRARY_RELEASE
+QT_QTTEST_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTUITOOLS_INCLUDE_DIR
+QT_QTUITOOLS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTUITOOLS_LIBRARY
+QT_QTUITOOLS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTUITOOLS_LIBRARY_DEBUG
+QT_QTUITOOLS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTUITOOLS_LIBRARY_RELEASE
+QT_QTUITOOLS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTWCODECS_PLUGIN_DEBUG
+QT_QTWCODECS_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTWCODECS_PLUGIN_RELEASE
+QT_QTWCODECS_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTWEBKIT_INCLUDE_DIR
+QT_QTWEBKIT_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTWEBKIT_LIBRARY
+QT_QTWEBKIT_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTWEBKIT_LIBRARY_DEBUG
+QT_QTWEBKIT_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTWEBKIT_LIBRARY_RELEASE
+QT_QTWEBKIT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXMLPATTERNS_INCLUDE_DIR
+QT_QTXMLPATTERNS_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXMLPATTERNS_LIBRARY
+QT_QTXMLPATTERNS_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXMLPATTERNS_LIBRARY_DEBUG
+QT_QTXMLPATTERNS_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXMLPATTERNS_LIBRARY_RELEASE
+QT_QTXMLPATTERNS_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXML_INCLUDE_DIR
+QT_QTXML_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXML_LIBRARY
+QT_QTXML_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXML_LIBRARY_DEBUG
+QT_QTXML_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QTXML_LIBRARY_RELEASE
+QT_QTXML_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QWEBVIEW_PLUGIN_DEBUG
+QT_QWEBVIEW_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QWEBVIEW_PLUGIN_RELEASE
+QT_QWEBVIEW_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QWSTSLIBMOUSEHANDLER_PLUGIN_DEBUG
+QT_QWSTSLIBMOUSEHANDLER_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_QWSTSLIBMOUSEHANDLER_PLUGIN_RELEASE
+QT_QWSTSLIBMOUSEHANDLER_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_RCC_EXECUTABLE
+QT_RCC_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_TASKMENUEXTENSION_PLUGIN_DEBUG
+QT_TASKMENUEXTENSION_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_TASKMENUEXTENSION_PLUGIN_RELEASE
+QT_TASKMENUEXTENSION_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_TRANSLATIONS_DIR
+QT_TRANSLATIONS_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_UIC3_EXECUTABLE
+QT_UIC3_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_UIC_EXECUTABLE
+QT_UIC_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_WORLDTIMECLOCKPLUGIN_PLUGIN_DEBUG
+QT_WORLDTIMECLOCKPLUGIN_PLUGIN_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: QT_WORLDTIMECLOCKPLUGIN_PLUGIN_RELEASE
+QT_WORLDTIMECLOCKPLUGIN_PLUGIN_RELEASE-ADVANCED:INTERNAL=1
+//Have symbol Q_WS_MAC
+Q_WS_MAC:INTERNAL=
+//Have symbol Q_WS_QWS
+Q_WS_QWS:INTERNAL=
+//Have symbol Q_WS_WIN
+Q_WS_WIN:INTERNAL=
+//Have symbol Q_WS_X11
+Q_WS_X11:INTERNAL=1
+//ADVANCED property for variable: TinyXML_INCLUDE_DIR
+TinyXML_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TinyXML_LIBRARY
+TinyXML_LIBRARY-ADVANCED:INTERNAL=1
+XML_CFLAGS:INTERNAL=-I/usr/include/libxml2
+XML_CFLAGS_I:INTERNAL=
+XML_CFLAGS_OTHER:INTERNAL=
+XML_FOUND:INTERNAL=1
+XML_INCLUDEDIR:INTERNAL=/usr/include
+XML_INCLUDE_DIRS:INTERNAL=/usr/include/libxml2
+XML_LDFLAGS:INTERNAL=-lxml2
+XML_LDFLAGS_OTHER:INTERNAL=
+XML_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+XML_LIBRARIES:INTERNAL=xml2
+XML_LIBRARY_DIRS:INTERNAL=
+XML_LIBS:INTERNAL=
+XML_LIBS_L:INTERNAL=
+XML_LIBS_OTHER:INTERNAL=
+XML_LIBS_PATHS:INTERNAL=
+XML_PREFIX:INTERNAL=/usr
+XML_STATIC_CFLAGS:INTERNAL=-I/usr/include/libxml2
+XML_STATIC_CFLAGS_I:INTERNAL=
+XML_STATIC_CFLAGS_OTHER:INTERNAL=
+XML_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/libxml2
+XML_STATIC_LDFLAGS:INTERNAL=-lxml2;-lz;-lm;-llzma
+XML_STATIC_LDFLAGS_OTHER:INTERNAL=
+XML_STATIC_LIBDIR:INTERNAL=
+XML_STATIC_LIBRARIES:INTERNAL=xml2;z;m;lzma
+XML_STATIC_LIBRARY_DIRS:INTERNAL=
+XML_STATIC_LIBS:INTERNAL=
+XML_STATIC_LIBS_L:INTERNAL=
+XML_STATIC_LIBS_OTHER:INTERNAL=
+XML_STATIC_LIBS_PATHS:INTERNAL=
+XML_VERSION:INTERNAL=2.9.1
+XML_libxml-2.0_INCLUDEDIR:INTERNAL=
+XML_libxml-2.0_LIBDIR:INTERNAL=
+XML_libxml-2.0_PREFIX:INTERNAL=
+XML_libxml-2.0_VERSION:INTERNAL=
+__pkg_config_checked_NEW_YAMLCPP:INTERNAL=1
+__pkg_config_checked_XML:INTERNAL=1
 

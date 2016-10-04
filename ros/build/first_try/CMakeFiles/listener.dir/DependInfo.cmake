@@ -21,6 +21,10 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/eigen3"
+  "/usr/include/mrpt/mrpt-config"
+  "/usr/include/suitesparse"
+  "/usr/include/mrpt/base/include"
   "/opt/ros/indigo/include"
   "/home/kin/fyp2016/ros/src/first_try/include"
   )

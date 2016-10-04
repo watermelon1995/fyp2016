@@ -150,48 +150,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_cpp: stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_lisp: stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_generate_messages_py: stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/rule
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
-
-# Convenience name for target.
 stdr_simulator/stdr_robot/CMakeFiles/bond_generate_messages_cpp.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/bond_generate_messages_cpp.dir/rule
 .PHONY : stdr_simulator/stdr_robot/CMakeFiles/bond_generate_messages_cpp.dir/rule
@@ -288,48 +246,6 @@ robot_handler: stdr_simulator/stdr_robot/CMakeFiles/robot_handler.dir/rule
 robot_handler/fast:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/robot_handler.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/robot_handler.dir/build
 .PHONY : robot_handler/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_cpp: stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_lisp: stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_py: stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 stdr_simulator/stdr_robot/CMakeFiles/stdr_co2_sensor.dir/rule:
@@ -484,90 +400,6 @@ stdr_thermal_sensor: stdr_simulator/stdr_robot/CMakeFiles/stdr_thermal_sensor.di
 stdr_thermal_sensor/fast:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/stdr_thermal_sensor.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/stdr_thermal_sensor.dir/build
 .PHONY : stdr_thermal_sensor/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_cpp: stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_lisp: stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf2_msgs_generate_messages_py: stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_cpp: stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/rule
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_lisp: stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/rule
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/rule
-
-# Convenience name for target.
-tf_generate_messages_py: stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/rule
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
 
 src/handle_robot.o: src/handle_robot.cpp.o
 .PHONY : src/handle_robot.o
@@ -863,9 +695,6 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_py"
 	@echo "... bond_generate_messages_cpp"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_py"
@@ -879,9 +708,6 @@ help:
 	@echo "... nodelet_generate_messages_py"
 	@echo "... rebuild_cache"
 	@echo "... robot_handler"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... stdr_co2_sensor"
 	@echo "... stdr_handle_robot"
 	@echo "... stdr_ideal_motion_controller"
@@ -894,12 +720,6 @@ help:
 	@echo "... stdr_sonar"
 	@echo "... stdr_thermal_sensor"
 	@echo "... test"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_py"
 	@echo "... src/handle_robot.o"
 	@echo "... src/handle_robot.i"
 	@echo "... src/handle_robot.s"

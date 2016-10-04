@@ -7,7 +7,11 @@ project(first_try)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
+  tf
 )
+
+
+find_package(MRPT REQUIRED base)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -201,3 +205,7 @@ add_dependencies(listener first_try_generate_messages_cpp)
 add_executable(kinMap src/kinMap.cpp)
 target_link_libraries(kinMap ${catkin_LIBRARIES})
 add_dependencies(kinMap first_try_generate_messages_cpp)
+
+add_executable(new_kinMap src/new_kinMap.cpp)
+target_link_libraries(new_kinMap ${catkin_LIBRARIES} ${MRPT_LIBRARIES})
+add_dependencies(new_kinMap first_try_generate_messages_cpp)

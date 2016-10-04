@@ -1242,6 +1242,45 @@ stdr_msgs_genpy/fast:
 .PHONY : stdr_msgs_genpy/fast
 
 #=============================================================================
+# Target rules for targets named actionlib_generate_messages_cpp
+
+# Build rule for target.
+actionlib_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	$(MAKE) -f first_try/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make first_try/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_lisp
+
+# Build rule for target.
+actionlib_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	$(MAKE) -f first_try/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make first_try/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named actionlib_generate_messages_py
+
+# Build rule for target.
+actionlib_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	$(MAKE) -f first_try/CMakeFiles/actionlib_generate_messages_py.dir/build.make first_try/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named kinMap
 
 # Build rule for target.
@@ -1266,6 +1305,19 @@ listener: cmake_check_build_system
 listener/fast:
 	$(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/build
 .PHONY : listener/fast
+
+#=============================================================================
+# Target rules for targets named new_kinMap
+
+# Build rule for target.
+new_kinMap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 new_kinMap
+.PHONY : new_kinMap
+
+# fast build rule for target.
+new_kinMap/fast:
+	$(MAKE) -f first_try/CMakeFiles/new_kinMap.dir/build.make first_try/CMakeFiles/new_kinMap.dir/build
+.PHONY : new_kinMap/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -1346,6 +1398,45 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f first_try/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make first_try/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f first_try/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make first_try/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f first_try/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named talker
 
 # Build rule for target.
@@ -1359,6 +1450,84 @@ talker/fast:
 .PHONY : talker/fast
 
 #=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_cpp
+
+# Build rule for target.
+tf2_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_lisp
+
+# Build rule for target.
+tf2_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f first_try/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make first_try/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf2_msgs_generate_messages_py
+
+# Build rule for target.
+tf2_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	$(MAKE) -f first_try/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_cpp
+
+# Build rule for target.
+tf_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
+.PHONY : tf_generate_messages_cpp
+
+# fast build rule for target.
+tf_generate_messages_cpp/fast:
+	$(MAKE) -f first_try/CMakeFiles/tf_generate_messages_cpp.dir/build.make first_try/CMakeFiles/tf_generate_messages_cpp.dir/build
+.PHONY : tf_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_lisp
+
+# Build rule for target.
+tf_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
+.PHONY : tf_generate_messages_lisp
+
+# fast build rule for target.
+tf_generate_messages_lisp/fast:
+	$(MAKE) -f first_try/CMakeFiles/tf_generate_messages_lisp.dir/build.make first_try/CMakeFiles/tf_generate_messages_lisp.dir/build
+.PHONY : tf_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named tf_generate_messages_py
+
+# Build rule for target.
+tf_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
+.PHONY : tf_generate_messages_py
+
+# fast build rule for target.
+tf_generate_messages_py/fast:
+	$(MAKE) -f first_try/CMakeFiles/tf_generate_messages_py.dir/build.make first_try/CMakeFiles/tf_generate_messages_py.dir/build
+.PHONY : tf_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named stdr_parser
 
 # Build rule for target.
@@ -1370,45 +1539,6 @@ stdr_parser: cmake_check_build_system
 stdr_parser/fast:
 	$(MAKE) -f stdr_simulator/stdr_parser/CMakeFiles/stdr_parser.dir/build.make stdr_simulator/stdr_parser/CMakeFiles/stdr_parser.dir/build
 .PHONY : stdr_parser/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_cpp
-
-# Build rule for target.
-actionlib_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_cpp
-.PHONY : actionlib_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_generate_messages_cpp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_cpp.dir/build
-.PHONY : actionlib_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_lisp
-
-# Build rule for target.
-actionlib_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_lisp
-.PHONY : actionlib_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_generate_messages_lisp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_lisp.dir/build
-.PHONY : actionlib_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named actionlib_generate_messages_py
-
-# Build rule for target.
-actionlib_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 actionlib_generate_messages_py
-.PHONY : actionlib_generate_messages_py
-
-# fast build rule for target.
-actionlib_generate_messages_py/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/actionlib_generate_messages_py.dir/build
-.PHONY : actionlib_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named bond_generate_messages_cpp
@@ -1500,45 +1630,6 @@ robot_handler: cmake_check_build_system
 robot_handler/fast:
 	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/robot_handler.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/robot_handler.dir/build
 .PHONY : robot_handler/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named stdr_co2_sensor
@@ -1682,84 +1773,6 @@ stdr_thermal_sensor: cmake_check_build_system
 stdr_thermal_sensor/fast:
 	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/stdr_thermal_sensor.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/stdr_thermal_sensor.dir/build
 .PHONY : stdr_thermal_sensor/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_cpp
-
-# Build rule for target.
-tf2_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_cpp
-.PHONY : tf2_msgs_generate_messages_cpp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
-.PHONY : tf2_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_lisp
-
-# Build rule for target.
-tf2_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_lisp
-.PHONY : tf2_msgs_generate_messages_lisp
-
-# fast build rule for target.
-tf2_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
-.PHONY : tf2_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf2_msgs_generate_messages_py
-
-# Build rule for target.
-tf2_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf2_msgs_generate_messages_py
-.PHONY : tf2_msgs_generate_messages_py
-
-# fast build rule for target.
-tf2_msgs_generate_messages_py/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
-.PHONY : tf2_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_cpp
-
-# Build rule for target.
-tf_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_cpp
-.PHONY : tf_generate_messages_cpp
-
-# fast build rule for target.
-tf_generate_messages_cpp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_cpp.dir/build
-.PHONY : tf_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_lisp
-
-# Build rule for target.
-tf_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_lisp
-.PHONY : tf_generate_messages_lisp
-
-# fast build rule for target.
-tf_generate_messages_lisp/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_lisp.dir/build
-.PHONY : tf_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named tf_generate_messages_py
-
-# Build rule for target.
-tf_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tf_generate_messages_py
-.PHONY : tf_generate_messages_py
-
-# fast build rule for target.
-tf_generate_messages_py/fast:
-	$(MAKE) -f stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/build.make stdr_simulator/stdr_robot/CMakeFiles/tf_generate_messages_py.dir/build
-.PHONY : tf_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named stdr_obstacle_avoidance
@@ -2079,19 +2092,29 @@ help:
 	@echo "... stdr_msgs_generate_messages_py"
 	@echo "... stdr_msgs_genlisp"
 	@echo "... stdr_msgs_genpy"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... actionlib_generate_messages_py"
 	@echo "... kinMap"
 	@echo "... listener"
+	@echo "... new_kinMap"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... talker"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... tf_generate_messages_cpp"
+	@echo "... tf_generate_messages_lisp"
+	@echo "... tf_generate_messages_py"
 	@echo "... stdr_parser"
-	@echo "... actionlib_generate_messages_cpp"
-	@echo "... actionlib_generate_messages_lisp"
-	@echo "... actionlib_generate_messages_py"
 	@echo "... bond_generate_messages_cpp"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... bond_generate_messages_py"
@@ -2099,9 +2122,6 @@ help:
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... robot_handler"
-	@echo "... sensor_msgs_generate_messages_cpp"
-	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... stdr_co2_sensor"
 	@echo "... stdr_handle_robot"
 	@echo "... stdr_ideal_motion_controller"
@@ -2113,12 +2133,6 @@ help:
 	@echo "... stdr_sensor_base"
 	@echo "... stdr_sonar"
 	@echo "... stdr_thermal_sensor"
-	@echo "... tf2_msgs_generate_messages_cpp"
-	@echo "... tf2_msgs_generate_messages_lisp"
-	@echo "... tf2_msgs_generate_messages_py"
-	@echo "... tf_generate_messages_cpp"
-	@echo "... tf_generate_messages_lisp"
-	@echo "... tf_generate_messages_py"
 	@echo "... stdr_obstacle_avoidance"
 	@echo "... load_map"
 	@echo "... stdr_map_loader"

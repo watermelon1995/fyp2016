@@ -224,6 +224,9 @@ LSB_FOUND:BOOL=TRUE
 //Path to a program.
 LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
+//The directory containing a CMake configuration file for MRPT.
+MRPT_DIR:PATH=/usr/share/mrpt
+
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
@@ -950,6 +953,9 @@ message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for mrpt.
+mrpt_DIR:PATH=mrpt_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake

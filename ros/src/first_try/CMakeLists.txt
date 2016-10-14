@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 
-find_package(MRPT REQUIRED base maps)
+find_package(MRPT REQUIRED base maps gui opengl)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

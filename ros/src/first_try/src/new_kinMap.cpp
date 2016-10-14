@@ -1,11 +1,13 @@
 // #include <mrpt/base.h>
 #include <mrpt/maps/COccupancyGridMap2D.h>
-#include <mrpt_bridge/laser_scan.h>
+#include <mrpt/utils/CMemoryStream.h>
 #include <mrpt/obs/CObservation2DRangeScan.h>
 #include "ros/ros.h"
 #include "sensor_msgs/LaserScan.h"
 #include "tf/transform_listener.h"
 #include "geometry_msgs/Pose2D.h"
+#include "new_kinGui.cpp"
+#include <pthread.h>
 
 // using  namespace mrpt::utils;
 // using  namespace mrpt::poses;
@@ -13,6 +15,7 @@
 // using namespace mrpt::slam;
 
 using namespace mrpt::maps;
+using namespace mrpt::utils;
 using namespace std;
 using namespace ros;
 using namespace tf;
@@ -133,7 +136,7 @@ void bhm_line(int x1,int y1,int x2,int y2){
     }
     py=py+2*(dx1-dy1);
    }
-   
+
    update_grid(x, y, 0.6);
   }
  }
@@ -163,7 +166,7 @@ void update_map(vector<float> ranges, float x, float y, float yaw){
             update_grid(end_x, end_y, 0.4);
             bhm_line(start_x, start_y, end_x, end_y);
             // update_line(start_x, end_x, start_y, end_y, false);
-            
+
             // sleep(1);
             // cout<<"line"<<endl;
         }else{
@@ -182,6 +185,10 @@ void update_map(vector<float> ranges, float x, float y, float yaw){
     }
 }
 
+kinObserver k_observer;
+kinGui *hi;
+mrpt::opengl::CSetOfObjectsPtr glObj;
+
 void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
     tf::StampedTransform t;
     try{
@@ -197,32 +204,76 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
     t.getBasis().getRPY(roll, pitch, yaw);
     cout<<"Angle: "<<yaw<<endl;
 
-    if(debug>1000){
-        cout<<"Done!"<<endl;
-        map_ptr->saveAsBitmapFile("/home/kin/Desktop/new_kin.bmp");
-        sleep(5);
-        
-        exit(0);
-    }
+    // if(debug>1000){
+    //     cout<<"Done!"<<endl;
+    //     map_ptr->saveAsBitmapFile("/home/kin/Desktop/new_kin.bmp");
+    //     sleep(5);
+    //
+    //     exit(0);
+    // }
 
     if(debug>10){
         // geometry_msgs::Pose2D hihi= new Pose2D(t.getOrigin().x(), t.getOrigin().y(), yaw);
         // update_map_observation(scan_in);
         update_map(scan_in->ranges, t.getOrigin().x(), t.getOrigin().y(), yaw);
+        if(debug%5 == 0){
+          // glObj.clear_unique();
+          map_ptr->getAs3DObject(glObj);
+          hi->update_gui(glObj);
+
+        }
 
     }
     debug++;
 }
 
+int *argc_global;
+char **argv_global;
+
+
+
+void *start_gui(void *ptr){
+  cout<<"fuck"<<endl;
+
+  hi = new kinGui();
+
+  hi->init(&k_observer);
+  cout<<"fuck"<<endl;
+
+
+  // getchar();
+}
+
+
+
+void *start_ros(void *ptr){
+
+}
+
 
 int main(int argc, char ** argv)
 {
+  // argc_global = &argc;
+  // argv_global = argv;
+    // cout<<argc<<endl;
+    // cout<<*argv<<endl;
+    glObj = mrpt::opengl::CSetOfObjects::Create();
 
-    COccupancyGridMap2D occ_map = COccupancyGridMap2D(0.0, 15.5, 0.0, 14.92, 0.02);
-    map_ptr = &occ_map;
 
+    pthread_t gui_thread;
+    int ret;
+    ret = pthread_create(&gui_thread, NULL, &start_gui, NULL);
+    if(ret!=0){
+      cout<<"DIU gui"<<endl;
+    }
     // cout<<"size_x:" <<occ_map.getSizeX()<<endl;
     // cout<<"size_y:" <<occ_map.getSizeY()<<endl;
+
+    COccupancyGridMap2D occ_map = COccupancyGridMap2D(0.0, 15.5, 0.0, 14.92, 0.02);
+    k_observer.observeBegin(occ_map);
+    map_ptr = &occ_map;
+
+
     ros::init(argc, argv, "new_kinMap");
 
 
@@ -230,12 +281,30 @@ int main(int argc, char ** argv)
 
     TransformListener listener(ros::Duration(5));
     trans = &listener;
-
+    // cout<<"de";
     ros::Subscriber laser_sub = n.subscribe("/robot0/laser_0", 1000, laser_callback);
     // Subscriber sub_sonar_0 = n.subscribe("/robot0/sonar_0", 1000, sonar0_callback);
     // Subscriber sub_sonar_1 = n.subscribe("/robot0/sonar_1", 1000, sonar1_callback);
 
     ros::spin();
 
+
+
+    //
+    //
+    // ret = pthread_create(&ros_thread, NULL, &start_ros, NULL);
+    // if(ret!=0){
+    //   cout<<"DIU ros"<<endl;
+    // }
+    // ret = pthread_create(&gui_thread, NULL, &start_gui, NULL);
+    // if(ret!=0){
+    //   cout<<"DIU gui"<<endl;
+    // }
+    pthread_join(gui_thread, NULL);
+    cout<<"Exit...."<<endl;
+    exit(1);
+    // pthread_join(ros_thread, NULL);
+    // while(1);
+    // cout<<"end"<<endl;
     return 0;
 }

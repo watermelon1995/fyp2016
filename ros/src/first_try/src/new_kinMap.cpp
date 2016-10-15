@@ -1,6 +1,7 @@
 // #include <mrpt/base.h>
 #include <mrpt/maps/COccupancyGridMap2D.h>
-#include <mrpt/utils/CMemoryStream.h>
+// #include <mrpt/utils/CMemoryStream.h>
+#include <mrpt/utils/CImage.h>
 #include <mrpt/obs/CObservation2DRangeScan.h>
 #include "ros/ros.h"
 #include "sensor_msgs/LaserScan.h"
@@ -170,10 +171,10 @@ void update_map(vector<float> ranges, float x, float y, float yaw){
             // sleep(1);
             // cout<<"line"<<endl;
         }else{
-            end_x = map_ptr->x2idx(x+max_range*cos(angle));
-            end_y = map_ptr->y2idx(y+max_range*sin(angle));
-            update_grid(end_x, end_y, 0.4);
-            bhm_line(start_x, start_y, end_x, end_y);
+            // end_x = map_ptr->x2idx(x+max_range*cos(angle));
+            // end_y = map_ptr->y2idx(y+max_range*sin(angle));
+            // update_grid(end_x, end_y, 0.4);
+            // bhm_line(start_x, start_y, end_x, end_y);
             // update_line(start_x, end_x, start_y, end_y, true);
         }
 
@@ -186,6 +187,7 @@ void update_map(vector<float> ranges, float x, float y, float yaw){
 }
 
 kinObserver k_observer;
+CImagePtr glob_img;
 kinGui *hi;
 mrpt::opengl::CSetOfObjectsPtr glObj;
 
@@ -218,8 +220,11 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
         update_map(scan_in->ranges, t.getOrigin().x(), t.getOrigin().y(), yaw);
         if(debug%5 == 0){
           // glObj.clear_unique();
-          map_ptr->getAs3DObject(glObj);
-          hi->update_gui(glObj);
+          // map_ptr->getAs3DObject(glObj);
+          // hi->update_gui(glObj);
+
+          map_ptr->getAsImage(*glob_img, false, false, false);
+          hi->update_gui_2d(glob_img);
 
         }
 
@@ -257,8 +262,8 @@ int main(int argc, char ** argv)
   // argv_global = argv;
     // cout<<argc<<endl;
     // cout<<*argv<<endl;
-    glObj = mrpt::opengl::CSetOfObjects::Create();
-
+    // glObj = mrpt::opengl::CSetOfObjects::Create();
+    glob_img = mrpt::utils::CImage::Create();
 
     pthread_t gui_thread;
     int ret;

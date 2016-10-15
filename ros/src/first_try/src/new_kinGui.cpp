@@ -1,5 +1,6 @@
 
 #include <mrpt/gui/CDisplayWindow3D.h>
+#include <mrpt/gui/CDisplayWindow.h>
 #include <mrpt/opengl/CGridPlaneXY.h>
 #include <mrpt/system/threads.h>
 #include <mrpt/utils/CObserver.h>
@@ -44,31 +45,45 @@ class kinObserver: public mrpt::utils::CObserver{
 
 class kinGui{
   public:
-    CDisplayWindow3DPtr gui;
-    COpenGLScenePtr scene;
+    // CDisplayWindow3DPtr gui_3d;
+    CDisplayWindowPtr gui_2d;
+    // COpenGLScenePtr scene;
 
     void init(kinObserver *k_observer){
-      cout << "Setting up gui windows..."<<endl;
+      cout << "Setting up gui_3d windows..."<<endl;
 
-      gui = CDisplayWindow3D::Create("kinMap GUI", 1024, 768);
-      {
-        scene = gui->get3DSceneAndLock();
-        scene->insert( mrpt::opengl::CGridPlaneXY::Create() );
-        gui->unlockAccess3DScene();
-        gui->repaint();
-      }
+      // gui_3d = CDisplayWindow3D::Create("kinMap GUI", 1024, 768);
+      // {
+      //   scene = gui_3d->get3DSceneAndLock();
+      //   scene->insert( mrpt::opengl::CGridPlaneXY::Create() );
+      //   gui_3d->unlockAccess3DScene();
+      //   gui_3d->repaint();
+      // }
 
-      k_observer->observeBegin(*gui);
+      gui_2d = CDisplayWindow::Create("kinMap_2D", 1024, 768);
 
-      cout << "Setting up gui windows... Done!" <<endl;
+      // gui_3d->setPos(10,10);
 
-      gui->waitForKey();
+      gui_2d->setPos(500, 10);
+
+
+      // k_observer->observeBegin(*gui_3d);
+      k_observer->observeBegin(*gui_2d);
+
+      cout << "Setting up gui_3d windows... Done!" <<endl;
+
+      // gui_3d->waitForKey();
+      gui_2d->waitForKey();
 
       // while(gui->isOpen()){
       //   mrpt::system::sleep(100);
       // }
     }
 
+
+    void update_gui_2d(mrpt::utils::CImagePtr img){
+      gui_2d->showImage(*img);
+    }
     // CDisplayWindow3D getWindows(){
     //   return (CDisplayWindow3D)gui;
     // }
@@ -77,10 +92,10 @@ class kinGui{
     //   k_observer->observeBegin(*gui);
     // }
 
-    void update_gui(mrpt::opengl::CSetOfObjectsPtr obj){
-      scene->clear();
-      scene->insert(obj);
-      gui->repaint();
-      // obj.clear();
-    }
+    // void update_gui(mrpt::opengl::CSetOfObjectsPtr obj){
+    //   scene->clear();
+    //   scene->insert(obj);
+    //   gui_3d->repaint();
+    //   // obj.clear();
+    // }
 };

@@ -171,10 +171,10 @@ void update_map(vector<float> ranges, float x, float y, float yaw){
             // sleep(1);
             // cout<<"line"<<endl;
         }else{
-            // end_x = map_ptr->x2idx(x+max_range*cos(angle));
-            // end_y = map_ptr->y2idx(y+max_range*sin(angle));
+            end_x = map_ptr->x2idx(x+max_range*cos(angle));
+            end_y = map_ptr->y2idx(y+max_range*sin(angle));
             // update_grid(end_x, end_y, 0.4);
-            // bhm_line(start_x, start_y, end_x, end_y);
+            bhm_line(start_x, start_y, end_x, end_y);
             // update_line(start_x, end_x, start_y, end_y, true);
         }
 

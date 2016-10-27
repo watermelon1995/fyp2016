@@ -13,6 +13,10 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(MRPT REQUIRED base maps gui opengl)
 
+
+find_package(wxWidgets COMPONENTS core base REQUIRED)
+include(${wxWidgets_USE_FILE})
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 
@@ -209,3 +213,7 @@ add_dependencies(kinMap first_try_generate_messages_cpp)
 add_executable(new_kinMap src/new_kinMap.cpp)
 target_link_libraries(new_kinMap ${catkin_LIBRARIES} ${MRPT_LIBRARIES})
 add_dependencies(new_kinMap first_try_generate_messages_cpp)
+
+add_executable(controller src/controller_gui.cpp)
+target_link_libraries(controller ${catkin_LIBRARIES} ${MRPT_LIBRARIES} ${wxWidgets_LIBRARIES})
+add_dependencies(controller first_try_generate_messages_cpp)

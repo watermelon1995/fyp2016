@@ -195,16 +195,16 @@ include_directories(
 # catkin_add_nosetests(test)
 
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(include ${catkin_INCLUDE_DIRS} "/home/kin/fyp2016/ros/src/first_try")
 
 
-add_executable(talker src/helloworld.cpp)
-target_link_libraries(talker ${catkin_LIBRARIES})
-add_dependencies(talker first_try_generate_messages_cpp)
+# add_executable(talker src/helloworld.cpp)
+# target_link_libraries(talker ${catkin_LIBRARIES})
+# add_dependencies(talker first_try_generate_messages_cpp)
 
-add_executable(listener src/helloworld_listener.cpp)
-target_link_libraries(listener ${catkin_LIBRARIES})
-add_dependencies(listener first_try_generate_messages_cpp)
+# add_executable(listener src/helloworld_listener.cpp)
+# target_link_libraries(listener ${catkin_LIBRARIES})
+# add_dependencies(listener first_try_generate_messages_cpp)
 
 add_executable(kinMap src/kinMap.cpp)
 target_link_libraries(kinMap ${catkin_LIBRARIES})
@@ -214,6 +214,6 @@ add_executable(new_kinMap src/new_kinMap.cpp)
 target_link_libraries(new_kinMap ${catkin_LIBRARIES} ${MRPT_LIBRARIES})
 add_dependencies(new_kinMap first_try_generate_messages_cpp)
 
-add_executable(controller src/controller_gui.cpp)
-target_link_libraries(controller ${catkin_LIBRARIES} ${MRPT_LIBRARIES} ${wxWidgets_LIBRARIES})
-add_dependencies(controller first_try_generate_messages_cpp)
+# add_executable(controller src/controller_gui.cpp)
+# target_link_libraries(controller ${catkin_LIBRARIES} ${MRPT_LIBRARIES} ${wxWidgets_LIBRARIES})
+# add_dependencies(controller first_try_generate_messages_cpp)

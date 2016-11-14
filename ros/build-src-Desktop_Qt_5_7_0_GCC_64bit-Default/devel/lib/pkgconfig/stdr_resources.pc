@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel
+
+Name: stdr_resources
+Description: Description of stdr_resources
+Version: 0.3.1
+Cflags: 
+Libs: -L/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel/lib 
+Requires: 

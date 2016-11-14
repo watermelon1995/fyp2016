@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel
+
+Name: stdr_robot
+Description: Description of stdr_robot
+Version: 0.3.1
+Cflags: -I/home/kin/fyp2016/ros/src/stdr_simulator/stdr_robot/include
+Libs: -L/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel/lib -lstdr_handle_robot
+Requires: roscpp nodelet actionlib tf stdr_msgs stdr_parser geometry_msgs sensor_msgs nav_msgs

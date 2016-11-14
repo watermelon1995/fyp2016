@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel
+
+Name: stdr_parser
+Description: Description of stdr_parser
+Version: 0.3.1
+Cflags: -I/home/kin/fyp2016/ros/src/stdr_simulator/stdr_parser/include -I/usr/include
+Libs: -L/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel/lib -lstdr_parser -l:/usr/lib/x86_64-linux-gnu/libtinyxml.so
+Requires: roscpp roslib stdr_msgs

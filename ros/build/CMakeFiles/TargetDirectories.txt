@@ -78,11 +78,11 @@
 /home/kin/fyp2016/ros/build/gtest/CMakeFiles/gtest.dir
 /home/kin/fyp2016/ros/build/gtest/CMakeFiles/gtest_main.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/kinMap.dir
-/home/kin/fyp2016/ros/build/first_try/CMakeFiles/listener.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/CMakeFiles/load_map.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir
+/home/kin/fyp2016/ros/build/xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/new_kinMap.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/nodelet_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/nodelet_generate_messages_lisp.dir
@@ -129,7 +129,6 @@
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/CMakeFiles/stdr_server_node.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/stdr_sonar.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/stdr_thermal_sensor.dir
-/home/kin/fyp2016/ros/build/first_try/CMakeFiles/talker.dir
 /home/kin/fyp2016/ros/build/CMakeFiles/tests.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/tf2_msgs_generate_messages_lisp.dir

@@ -4,6 +4,8 @@
 #include <mrpt/opengl/CGridPlaneXY.h>
 #include <mrpt/system/threads.h>
 #include <mrpt/utils/CObserver.h>
+#include <mrpt/gui/CDisplayWindowPlots.h>
+#include "Robot.cpp"
 
 using namespace mrpt;
 using namespace mrpt::utils;
@@ -26,6 +28,30 @@ class kinObserver: public mrpt::utils::CObserver{
         {
           const mrptEventWindowChar &ee = static_cast<const mrptEventWindowChar &>(e);
           cout << "[MyObserver] Char event received from: " << ee.source_object<< ". Char code: " <<  ee.char_code << " modif: " << ee.key_modifiers << "\n";
+          switch (ee.char_code) {
+            case 81:
+              // Q
+              Robot::turn_anticlock();
+              break;
+            case 69:
+              // E
+              Robot::turn_clock();
+              break;
+            case 87:
+              // W
+              Robot::go_straight();
+              break;
+            case 83:
+              // S
+              Robot::go_back();
+              break;
+            case 32:
+              // Space
+              Robot::stop();
+              break;
+            default:
+              break;
+          }
         }
         else if (e.isOfType<mrptEventWindowClosed>())
         {
@@ -36,6 +62,10 @@ class kinObserver: public mrpt::utils::CObserver{
         {
           const mrptEventMouseDown &ee = static_cast<const mrptEventMouseDown&>(e);
           cout << "[MyObserver] Mouse down event received from: " << ee.source_object<< "pt: " <<ee.coords.x << "," << ee.coords.y << "\n";
+          // Robot::go_straight();
+          // for (int i = 0;i<glob_particle.size();i++){
+          //   glob_particle[i].update_particle(-0.03);
+          // }
         }
         else{
           cout << "[MyObserver] Event received: Another mrptEvent \n";
@@ -47,6 +77,7 @@ class kinGui{
   public:
     // CDisplayWindow3DPtr gui_3d;
     CDisplayWindowPtr gui_2d;
+    CDisplayWindowPlotsPtr plot;
     // COpenGLScenePtr scene;
 
     void init(kinObserver *k_observer){
@@ -61,19 +92,23 @@ class kinGui{
       // }
 
       gui_2d = CDisplayWindow::Create("kinMap_2D", 1024, 768);
+      plot = CDisplayWindowPlots::Create("Debug Pose", 1024, 768);
 
       // gui_3d->setPos(10,10);
 
       gui_2d->setPos(500, 10);
+      plot->setPos(10, 10);
 
 
       // k_observer->observeBegin(*gui_3d);
       k_observer->observeBegin(*gui_2d);
+      // k_observer->observeBegin(*plot);
 
       cout << "Setting up gui_3d windows... Done!" <<endl;
 
       // gui_3d->waitForKey();
       gui_2d->waitForKey();
+      plot->waitForKey();
 
       // while(gui->isOpen()){
       //   mrpt::system::sleep(100);
@@ -84,6 +119,7 @@ class kinGui{
     void update_gui_2d(mrpt::utils::CImagePtr img){
       gui_2d->showImage(*img);
     }
+
     // CDisplayWindow3D getWindows(){
     //   return (CDisplayWindow3D)gui;
     // }

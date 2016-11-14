@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel
+
+Name: stdr_msgs
+Description: Description of stdr_msgs
+Version: 0.3.1
+Cflags: -I/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel/include
+Libs: -L/home/kin/fyp2016/ros/build-src-Desktop_Qt_5_7_0_GCC_64bit-Default/devel/lib 
+Requires: message_runtime std_msgs geometry_msgs actionlib_msgs nav_msgs

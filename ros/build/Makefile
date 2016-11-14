@@ -1294,19 +1294,6 @@ kinMap/fast:
 .PHONY : kinMap/fast
 
 #=============================================================================
-# Target rules for targets named listener
-
-# Build rule for target.
-listener: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 listener
-.PHONY : listener
-
-# fast build rule for target.
-listener/fast:
-	$(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/build
-.PHONY : listener/fast
-
-#=============================================================================
 # Target rules for targets named new_kinMap
 
 # Build rule for target.
@@ -1435,19 +1422,6 @@ sensor_msgs_generate_messages_py: cmake_check_build_system
 sensor_msgs_generate_messages_py/fast:
 	$(MAKE) -f first_try/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named talker
-
-# Build rule for target.
-talker: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 talker
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	$(MAKE) -f first_try/CMakeFiles/talker.dir/build.make first_try/CMakeFiles/talker.dir/build
-.PHONY : talker/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_cpp
@@ -1995,6 +1969,19 @@ stdr_gui_node/fast:
 	$(MAKE) -f stdr_simulator/stdr_gui/CMakeFiles/stdr_gui_node.dir/build.make stdr_simulator/stdr_gui/CMakeFiles/stdr_gui_node.dir/build
 .PHONY : stdr_gui_node/fast
 
+#=============================================================================
+# Target rules for targets named neato_laser_publisher
+
+# Build rule for target.
+neato_laser_publisher: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 neato_laser_publisher
+.PHONY : neato_laser_publisher
+
+# fast build rule for target.
+neato_laser_publisher/fast:
+	$(MAKE) -f xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir/build.make xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir/build
+.PHONY : neato_laser_publisher/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2096,7 +2083,6 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... kinMap"
-	@echo "... listener"
 	@echo "... new_kinMap"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -2107,7 +2093,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... talker"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
@@ -2150,6 +2135,7 @@ help:
 	@echo "... run_tests_stdr_server_rostest"
 	@echo "... run_tests_stdr_server_rostest_test_functional_interfaces_test.launch"
 	@echo "... stdr_gui_node"
+	@echo "... neato_laser_publisher"
 .PHONY : help
 
 

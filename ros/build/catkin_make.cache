@@ -1,2 +1,2 @@
-first_try:stdr_simulator/stdr_gui:stdr_simulator/stdr_launchers:stdr_simulator/stdr_msgs:stdr_simulator/stdr_parser:stdr_simulator/stdr_resources:stdr_simulator/stdr_robot:stdr_simulator/stdr_samples:stdr_simulator/stdr_server:stdr_simulator/stdr_simulator
+first_try:stdr_simulator/stdr_gui:stdr_simulator/stdr_launchers:stdr_simulator/stdr_msgs:stdr_simulator/stdr_parser:stdr_simulator/stdr_resources:stdr_simulator/stdr_robot:stdr_simulator/stdr_samples:stdr_simulator/stdr_server:stdr_simulator/stdr_simulator:xv_11_laser_driver
 -DCATKIN_DEVEL_PREFIX=/home/kin/fyp2016/ros/devel -DCMAKE_INSTALL_PREFIX=/home/kin/fyp2016/ros/install -G Unix Makefiles

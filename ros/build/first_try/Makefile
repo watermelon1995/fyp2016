@@ -206,20 +206,6 @@ kinMap/fast:
 .PHONY : kinMap/fast
 
 # Convenience name for target.
-first_try/CMakeFiles/listener.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/listener.dir/rule
-.PHONY : first_try/CMakeFiles/listener.dir/rule
-
-# Convenience name for target.
-listener: first_try/CMakeFiles/listener.dir/rule
-.PHONY : listener
-
-# fast build rule for target.
-listener/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/build
-.PHONY : listener/fast
-
-# Convenience name for target.
 first_try/CMakeFiles/new_kinMap.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/new_kinMap.dir/rule
 .PHONY : first_try/CMakeFiles/new_kinMap.dir/rule
@@ -360,20 +346,6 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-first_try/CMakeFiles/talker.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/talker.dir/rule
-.PHONY : first_try/CMakeFiles/talker.dir/rule
-
-# Convenience name for target.
-talker: first_try/CMakeFiles/talker.dir/rule
-.PHONY : talker
-
-# fast build rule for target.
-talker/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/talker.dir/build.make first_try/CMakeFiles/talker.dir/build
-.PHONY : talker/fast
-
-# Convenience name for target.
 first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
@@ -457,54 +429,6 @@ tf_generate_messages_py/fast:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/tf_generate_messages_py.dir/build.make first_try/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
-src/helloworld.o: src/helloworld.cpp.o
-.PHONY : src/helloworld.o
-
-# target to build an object file
-src/helloworld.cpp.o:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/talker.dir/build.make first_try/CMakeFiles/talker.dir/src/helloworld.cpp.o
-.PHONY : src/helloworld.cpp.o
-
-src/helloworld.i: src/helloworld.cpp.i
-.PHONY : src/helloworld.i
-
-# target to preprocess a source file
-src/helloworld.cpp.i:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/talker.dir/build.make first_try/CMakeFiles/talker.dir/src/helloworld.cpp.i
-.PHONY : src/helloworld.cpp.i
-
-src/helloworld.s: src/helloworld.cpp.s
-.PHONY : src/helloworld.s
-
-# target to generate assembly for a file
-src/helloworld.cpp.s:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/talker.dir/build.make first_try/CMakeFiles/talker.dir/src/helloworld.cpp.s
-.PHONY : src/helloworld.cpp.s
-
-src/helloworld_listener.o: src/helloworld_listener.cpp.o
-.PHONY : src/helloworld_listener.o
-
-# target to build an object file
-src/helloworld_listener.cpp.o:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/src/helloworld_listener.cpp.o
-.PHONY : src/helloworld_listener.cpp.o
-
-src/helloworld_listener.i: src/helloworld_listener.cpp.i
-.PHONY : src/helloworld_listener.i
-
-# target to preprocess a source file
-src/helloworld_listener.cpp.i:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/src/helloworld_listener.cpp.i
-.PHONY : src/helloworld_listener.cpp.i
-
-src/helloworld_listener.s: src/helloworld_listener.cpp.s
-.PHONY : src/helloworld_listener.s
-
-# target to generate assembly for a file
-src/helloworld_listener.cpp.s:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/listener.dir/build.make first_try/CMakeFiles/listener.dir/src/helloworld_listener.cpp.s
-.PHONY : src/helloworld_listener.cpp.s
-
 src/kinMap.o: src/kinMap.cpp.o
 .PHONY : src/kinMap.o
 
@@ -568,7 +492,6 @@ help:
 	@echo "... install/strip"
 	@echo "... kinMap"
 	@echo "... list_install_components"
-	@echo "... listener"
 	@echo "... new_kinMap"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
@@ -580,7 +503,6 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
-	@echo "... talker"
 	@echo "... test"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
@@ -588,12 +510,6 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
-	@echo "... src/helloworld.o"
-	@echo "... src/helloworld.i"
-	@echo "... src/helloworld.s"
-	@echo "... src/helloworld_listener.o"
-	@echo "... src/helloworld_listener.i"
-	@echo "... src/helloworld_listener.s"
 	@echo "... src/kinMap.o"
 	@echo "... src/kinMap.i"
 	@echo "... src/kinMap.s"

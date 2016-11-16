@@ -6,6 +6,8 @@
 #include <mrpt/utils/CObserver.h>
 #include <mrpt/gui/CDisplayWindowPlots.h>
 #include "Robot.cpp"
+#include <time.h>
+#include <mrpt/system/datetime.h>
 
 using namespace mrpt;
 using namespace mrpt::utils;
@@ -13,6 +15,10 @@ using namespace mrpt::opengl;
 using namespace mrpt::gui;
 using namespace std;
 
+mrpt::system::TTimeStamp begin_time;
+mrpt::system::TTimeStamp end_time;
+int front = 0;
+double time_diff;
 
 class kinObserver: public mrpt::utils::CObserver{
   protected:
@@ -31,23 +37,54 @@ class kinObserver: public mrpt::utils::CObserver{
           switch (ee.char_code) {
             case 81:
               // Q
+              begin_time = mrpt::system::now();
+              front= 2;
               Robot::turn_anticlock();
               break;
             case 69:
               // E
+              begin_time = mrpt::system::now();
+              front= 2;
               Robot::turn_clock();
               break;
             case 87:
               // W
+              begin_time = mrpt::system::now();
+              cout<<"begin : "<<begin_time<<endl;
+              front = 1;
               Robot::go_straight();
+
+              // for(int i = 0;i<glob_particle.size();i++){
+              //   glob_particle[i].update_particle(0.3);
+              // }
               break;
             case 83:
               // S
+              begin_time = mrpt::system::now();
+              cout<<begin_time<<endl;
+              front = 0;
               Robot::go_back();
               break;
             case 32:
               // Space
+              front = -1;
               Robot::stop();
+
+              // end_time = mrpt::system::now();
+              // time_diff = mrpt::system::timeDifference(begin_time, end_time);
+              // cout<<"Calculated : "<<time_diff <<endl;
+              // if(front==0){
+              //   for(int i = 0;i<glob_particle.size();i++){
+              //     glob_particle[i].update_particle(-0.33*time_diff);
+              //   }
+              // }else if (front==1){
+              //   for(int i = 0;i<glob_particle.size();i++){
+              //     glob_particle[i].update_particle(0.33*time_diff);
+              //   }
+              // }
+
+
+
               break;
             default:
               break;
@@ -77,7 +114,7 @@ class kinGui{
   public:
     // CDisplayWindow3DPtr gui_3d;
     CDisplayWindowPtr gui_2d;
-    CDisplayWindowPlotsPtr plot;
+    // CDisplayWindowPlotsPtr plot;
     // COpenGLScenePtr scene;
 
     void init(kinObserver *k_observer){
@@ -92,12 +129,12 @@ class kinGui{
       // }
 
       gui_2d = CDisplayWindow::Create("kinMap_2D", 1024, 768);
-      plot = CDisplayWindowPlots::Create("Debug Pose", 1024, 768);
+      // plot = CDisplayWindowPlots::Create("Debug Pose", 1024, 768);
 
       // gui_3d->setPos(10,10);
 
       gui_2d->setPos(500, 10);
-      plot->setPos(10, 10);
+      // plot->setPos(10, 10);
 
 
       // k_observer->observeBegin(*gui_3d);
@@ -108,7 +145,7 @@ class kinGui{
 
       // gui_3d->waitForKey();
       gui_2d->waitForKey();
-      plot->waitForKey();
+      // plot->waitForKey();
 
       // while(gui->isOpen()){
       //   mrpt::system::sleep(100);

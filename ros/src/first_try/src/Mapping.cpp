@@ -36,13 +36,13 @@ class Mapping{
     void update_grid(int x, int y, float prob){
         if(prob<0.5){
           // m_map->updateCell(x-1, y-1, prob);
-          // m_map->updateCell(x-1, y, prob);
+          m_map->updateCell(x-1, y, prob);
           // m_map->updateCell(x-1, y+1, prob);
-          // m_map->updateCell(x, y-1, prob);
+          m_map->updateCell(x, y-1, prob);
           m_map->updateCell(x, y, prob);
-          // m_map->updateCell(x, y+1, prob);
+          m_map->updateCell(x, y+1, prob);
           // m_map->updateCell(x+1, y-1, prob);
-          // m_map->updateCell(x+1, y, prob);
+          m_map->updateCell(x+1, y, prob);
           // m_map->updateCell(x+1, y+1, prob);
         }else{
           m_map->updateCell(x, y, prob);

@@ -12,6 +12,12 @@ class Position {
       y = t_y;
       r = t_r;
     }
+    void print(){
+      cout<<"X: "<<x<<" Y: "<<y<<" R: "<<r<<endl;
+    }
+    // void print_to_file(ofstream ss){
+    //     ss<<"X: "<<x<<" Y: "<<y<<" R: "<<r<<endl;
+    // }
 };
 
 
@@ -38,6 +44,11 @@ public:
     return p_position;
   }
 
+  void update_pose(float x, float y, float r){
+    p_position->x += x + random_float(-0.02, 0.02);
+    p_position->y += y + random_float(-0.02, 0.02);
+    p_position->r += r + random_float(-0.02, 0.02);
+  }
 
 
   float get_weight(){
@@ -62,11 +73,13 @@ public:
       float range = max - min;
       return (random*range) + min;
   }
-
+  void update_particle_yaw(float r){
+    p_position->r = r;
+  }
 
 
   void update_particle(float distance){
-    p_position->y += (distance)+ random_float(0.0, 0.005);
+    p_position->y += (distance)+ random_float(-0.005, 0.005);
   }
 
   void update_particle_weight(int scan_matching_score){
@@ -86,11 +99,20 @@ class Robot{
     float r_length;
     float r_width;
     Position *r_position;
+
+    int isListening;
   public:
+    SerialPort *hihi;
     Robot(float length, float width){
       r_length = length;
       r_width = width;
       r_position = new Position(0.0,0.0, 0.0);
+      hihi = new SerialPort("/dev/ttyUSB1");
+      isListening = 0;
+    }
+
+    void set_yaw(float r){
+      r_position->r = r;
     }
 
     void set_pose(float x, float y, float r){
@@ -103,18 +125,34 @@ class Robot{
       return r_position;
     }
 
-    static void turn_anticlock(){
+    // void random_walk(){
+    //
+    // }
+
+    void  ros_send_movement(int m1, int m2){
+      // if(1<=m1<=127 && 128<=m2<=255){
+        std_msgs::UInt8 robot_move_msg;
+        robot_move_msg.data = (unsigned char)m1;
+        glob_publish->publish(robot_move_msg);
+        robot_move_msg.data = (unsigned char)m2;
+        glob_publish->publish(robot_move_msg);
+        cout<<"Done"<<endl;
+      // }else{
+
+      // }
+    }
+
+    void turn_anticlock(){
       MOVEMENT m;
       m.m1_command = (unsigned char)127;
       m.m2_command = (unsigned char)128;
       m.duration = (unsigned int)1000;
       unsigned char buf[sizeof(MOVEMENT)];
       memcpy(buf, &m, sizeof(MOVEMENT));
-      SerialPort hihi = SerialPort("/dev/ttyUSB1");
-      if(hihi.open(115200)){
+      if(hihi->open(115200)){
         for(int i = 0; i<sizeof(MOVEMENT);i++){
           cout<<i<<": "<<(int)buf[i]<<endl;
-          hihi.write(buf[i]);
+          hihi->write(buf[i]);
         }
 
       }else{
@@ -122,18 +160,18 @@ class Robot{
       }
     }
 
-    static void turn_clock(){
+    void turn_clock(){
       MOVEMENT m;
       m.m1_command = (unsigned char)1;
       m.m2_command = (unsigned char)255;
       m.duration = (unsigned int)1000;
       unsigned char buf[sizeof(MOVEMENT)];
       memcpy(buf, &m, sizeof(MOVEMENT));
-      SerialPort hihi = SerialPort("/dev/ttyUSB1");
-      if(hihi.open(115200)){
+      // SerialPort hihi = SerialPort("/dev/ttyUSB1");
+      if(hihi->open(115200)){
         for(int i = 0; i<sizeof(MOVEMENT);i++){
           cout<<i<<": "<<(int)buf[i]<<endl;
-          hihi.write(buf[i]);
+          hihi->write(buf[i]);
         }
 
       }else{
@@ -141,18 +179,18 @@ class Robot{
       }
     }
 
-    static void stop(){
+    void stop(){
       MOVEMENT m;
       m.m1_command = (unsigned char)0;
       m.m2_command = (unsigned char)0;
       m.duration = (unsigned int)1000;
       unsigned char buf[sizeof(MOVEMENT)];
       memcpy(buf, &m, sizeof(MOVEMENT));
-      SerialPort hihi = SerialPort("/dev/ttyUSB1");
-      if(hihi.open(115200)){
+      // SerialPort hihi = SerialPort("/dev/ttyUSB1");
+      if(hihi->open(115200)){
         for(int i = 0; i<sizeof(MOVEMENT);i++){
           cout<<i<<": "<<(int)buf[i]<<endl;
-          hihi.write(buf[i]);
+          hihi->write(buf[i]);
         }
 
       }else{
@@ -160,18 +198,18 @@ class Robot{
       }
     }
 
-    static void go_back(){
+    void go_back(){
       MOVEMENT m;
       m.m1_command = (unsigned char)1;
       m.m2_command = (unsigned char)128;
       m.duration = (unsigned int)1000;
       unsigned char buf[sizeof(MOVEMENT)];
       memcpy(buf, &m, sizeof(MOVEMENT));
-      SerialPort hihi = SerialPort("/dev/ttyUSB1");
-      if(hihi.open(115200)){
+      // SerialPort hihi = SerialPort("/dev/ttyUSB1");
+      if(hihi->open(115200)){
         for(int i = 0; i<sizeof(MOVEMENT);i++){
           cout<<i<<": "<<(int)buf[i]<<endl;
-          hihi.write(buf[i]);
+          hihi->write(buf[i]);
         }
 
       }else{
@@ -179,26 +217,41 @@ class Robot{
       }
     }
 
-    static  void go_straight(){
+    void go_straight(){
       MOVEMENT m;
       m.m1_command = (unsigned char)127;
       m.m2_command = (unsigned char)255;
       m.duration = (unsigned int)1000;
       unsigned char buf[sizeof(MOVEMENT)];
       memcpy(buf, &m, sizeof(MOVEMENT));
-      SerialPort hihi = SerialPort("/dev/ttyUSB1");
-      if(hihi.open(115200)){
+      // SerialPort hihi = SerialPort("/dev/ttyUSB1");
+      // if(hihi.open(115200)){
+      if(hihi->available()){
         for(int i = 0; i<sizeof(MOVEMENT);i++){
           cout<<i<<": "<<(int)buf[i]<<endl;
-          hihi.write(buf[i]);
+          hihi->write(buf[i]);
         }
-
       }else{
-        cout<<"error"<<endl;
+        cout<<"error sending"<<endl;
       }
+
+
+      // }else{
+        // cout<<"error"<<endl;
+      // }
     }
 
     void listen_to_driver(){
+      if(hihi->open(115200)){
+        while(true){
+
+          if(hihi->available()){
+            cout<<(char)hihi->read();
+          }
+        }
+      }else{
+        cout<<"error"<<endl;
+      }
 
     }
 };

@@ -28,10 +28,6 @@ xv_11_laser_driver/xv11_laser.h
 std_msgs/UInt16.h
 -
 
-/home/kin/fyp2016/ros/src/xv_11_laser_driver/src/xv11_laser.cpp
-xv_11_laser_driver/xv11_laser.h
--
-
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
 -

@@ -17,8 +17,10 @@ using namespace std;
 
 mrpt::system::TTimeStamp begin_time;
 mrpt::system::TTimeStamp end_time;
-int front = 0;
+int front = -1;
 double time_diff;
+Robot *glob_r;
+Position *glob_goal = new Position(0.0,0.0,0.0);
 
 class kinObserver: public mrpt::utils::CObserver{
   protected:
@@ -39,20 +41,30 @@ class kinObserver: public mrpt::utils::CObserver{
               // Q
               begin_time = mrpt::system::now();
               front= 2;
-              Robot::turn_anticlock();
+              glob_r->ros_send_movement(86, 222);
+              // glob_r->ros_send_movement()
+              // pthread_mutex_lock(&mutex);
+              // glob_r->turn_anticlock();
+              // pthread_mutex_unlock(&mutex);
               break;
             case 69:
               // E
               begin_time = mrpt::system::now();
               front= 2;
-              Robot::turn_clock();
+              glob_r->ros_send_movement(95, 213);
+              // pthread_mutex_lock(&mutex);
+              // glob_r->turn_clock();
+              // pthread_mutex_unlock(&mutex);
               break;
             case 87:
               // W
               begin_time = mrpt::system::now();
               cout<<"begin : "<<begin_time<<endl;
               front = 1;
-              Robot::go_straight();
+              glob_r->ros_send_movement(86, 213);
+              // pthread_mutex_lock(&mutex);
+              // glob_r->go_straight();
+              // pthread_mutex_unlock(&mutex);
 
               // for(int i = 0;i<glob_particle.size();i++){
               //   glob_particle[i].update_particle(0.3);
@@ -63,12 +75,18 @@ class kinObserver: public mrpt::utils::CObserver{
               begin_time = mrpt::system::now();
               cout<<begin_time<<endl;
               front = 0;
-              Robot::go_back();
+              glob_r->ros_send_movement(43, 170);
+              // pthread_mutex_lock(&mutex);
+              // glob_r->go_back();
+              // pthread_mutex_unlock(&mutex);
               break;
             case 32:
               // Space
               front = -1;
-              Robot::stop();
+              glob_r->ros_send_movement(0,0);
+              // pthread_mutex_lock(&mutex);
+              // glob_r->stop();
+              // pthread_mutex_unlock(&mutex);
 
               // end_time = mrpt::system::now();
               // time_diff = mrpt::system::timeDifference(begin_time, end_time);
@@ -99,6 +117,8 @@ class kinObserver: public mrpt::utils::CObserver{
         {
           const mrptEventMouseDown &ee = static_cast<const mrptEventMouseDown&>(e);
           cout << "[MyObserver] Mouse down event received from: " << ee.source_object<< "pt: " <<ee.coords.x << "," << ee.coords.y << "\n";
+          glob_goal->x = (ee.coords.x-500)*0.01;
+          glob_goal->y = (ee.coords.y-500)*0.01*-1;
           // Robot::go_straight();
           // for (int i = 0;i<glob_particle.size();i++){
           //   glob_particle[i].update_particle(-0.03);
@@ -114,7 +134,10 @@ class kinGui{
   public:
     // CDisplayWindow3DPtr gui_3d;
     CDisplayWindowPtr gui_2d;
-    // CDisplayWindowPlotsPtr plot;
+    // CDisplayWindowPtr obs_2d;
+    CDisplayWindowPlotsPtr plot;
+    std::vector<float>  x;
+    std::vector<float>  y;
     // COpenGLScenePtr scene;
 
     void init(kinObserver *k_observer){
@@ -129,32 +152,50 @@ class kinGui{
       // }
 
       gui_2d = CDisplayWindow::Create("kinMap_2D", 1024, 768);
-      // plot = CDisplayWindowPlots::Create("Debug Pose", 1024, 768);
-
+      plot = CDisplayWindowPlots::Create("Debug Pose", 200, 200);
+      // obs_2d = CDisplayWindow::Create("Sensor Observation", 200, 200);
       // gui_3d->setPos(10,10);
 
       gui_2d->setPos(500, 10);
-      // plot->setPos(10, 10);
+      plot->setPos(10, 10);
+      // obs_2d->setPos(10, 500);
 
 
       // k_observer->observeBegin(*gui_3d);
       k_observer->observeBegin(*gui_2d);
-      // k_observer->observeBegin(*plot);
+      k_observer->observeBegin(*plot);
+      // k_observer->observeBegin(*obs_2d);
 
       cout << "Setting up gui_3d windows... Done!" <<endl;
 
       // gui_3d->waitForKey();
-      gui_2d->waitForKey();
+      // gui_2d->waitForKey();
       // plot->waitForKey();
 
       // while(gui->isOpen()){
       //   mrpt::system::sleep(100);
       // }
     }
+    // void show_observation(mrpt::utils::CImagePtr img){
+    //   obs_2d->showImage(*img);
+    // }
 
+    void update_gui_2d(mrpt::utils::CImagePtr img, std::vector<float> v_x, std::vector<float> v_y){
+      gui_2d->showImageAndPoints(*img, v_x, v_y, mrpt::utils::TColor::red, false);
+      // gui_2d->showImage(*img);
+    }
 
-    void update_gui_2d(mrpt::utils::CImagePtr img){
-      gui_2d->showImage(*img);
+    void update_plot_vector(std::vector<float> v_x, std::vector<float> v_y){
+      plot->plot(v_x, v_y);
+      plot->axis_fit(false);
+    }
+
+    void update_plot_single(float p_x, float p_y){
+      x.push_back(p_x);
+      y.push_back(p_y);
+
+      plot->plot(x, y);
+
     }
 
     // CDisplayWindow3D getWindows(){

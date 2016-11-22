@@ -23,7 +23,7 @@ class Mapping{
       p_free = 0.6;
       max_range = 4.09;
       m_map = COccupancyGridMap2D::Create();
-      m_map->setSize(-map_x, map_x, -map_y, map_y, 0.05);
+      m_map->setSize(-map_x, map_x, -map_y, map_y, 0.02);
     }
     void setting_params(float angle_min, float angle_max, float angle_interval, float range_min, float range_max){
       laser_angle_min = angle_min;
@@ -265,7 +265,7 @@ class Mapping{
               // cout<<"Match"<<endl;
               matching_score +=10;
             }else{
-              matching_score -=5;
+              // matching_score -=5;
             }
             matching_score += compute_scan_matching_line(start_x, start_y, end_x, end_y);
           }else{

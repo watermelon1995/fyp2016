@@ -17,6 +17,9 @@
 // #include "geometry_msgs/Pose2D.h"
 ros::Publisher *glob_publish;
 
+#include "Motor.cpp"
+
+Motor *glob_motor;
 
 #include "new_kinGui.cpp"
 #include "Mapping.cpp"
@@ -56,6 +59,7 @@ Position *glob_pose;
 kinGui *hi;
 mrpt::opengl::CSetOfObjectsPtr  gl_gridmap_3d;
 
+ofstream *estimate_file;
 ofstream *debug_file;
 
 int counter = 0;
@@ -98,9 +102,9 @@ void pose_callback(const geometry_msgs::PoseStamped::ConstPtr& pose_msg){
     *(debug_file)<< " ,Y: "<<glob_pose->y ;
     *(debug_file)<< " ,R: "<<glob_pose->r<<"\n" ;
   }
-  for(int i = 0;i<glob_particle.size();i++){
-    glob_particle[i].update_pose(glob_pose->x, glob_pose->y, glob_pose->r);
-  }
+  // for(int i = 0;i<glob_particle.size();i++){
+  //   glob_particle[i].update_pose(glob_pose->x, glob_pose->y, glob_pose->r);
+  // }
 }
 
 
@@ -109,14 +113,14 @@ void compass_callback(const std_msgs::Float32::ConstPtr& compass_msg){
   // float reflected_angle = atan(-sin(compass_msg->data)/-cos(compass_msg->data));
   // cout<<"reflected_angle: "<<reflected_angle<<" D: "<<reflected_angle*180/(M_PI)<<endl;
   cout<<"original_angle: "<<compass_msg->data<<" D: "<<compass_msg->data*180/(M_PI)<<endl;
-  if(abs(glob_goal->x-glob_pose->x)>0.1 || abs(glob_goal->y-glob_pose->y)>0.1 ){
-    float angle_diff = atan((glob_goal->y - glob_pose->y)/(glob_goal->x - glob_pose->x));
-    if(angle_diff>=glob_pose->r){
-      glob_r->ros_send_movement(86, 170);
-    }else{
-      glob_r->ros_send_movement(43, 212);
-    }
-  }
+  // if(abs(glob_goal->x-glob_pose->x)>0.1 || abs(glob_goal->y-glob_pose->y)>0.1 ){
+  //   float angle_diff = atan((glob_goal->y - glob_pose->y)/(glob_goal->x - glob_pose->x));
+  //   if(angle_diff>=glob_pose->r){
+  //     glob_r->ros_send_movement(86, 170);
+  //   }else{
+  //     glob_r->ros_send_movement(43, 212);
+  //   }
+  // }
   // glob_pose->r = compass_msg->data;
   // best_particles_r.push_back(compass_msg->data);
   // // time_count.push_back((float)counter/0.1);
@@ -261,17 +265,17 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
       // hi->show_observation(glob_img_obs);
 
     // }DA
-    if(abs(glob_goal->x-glob_pose->x)>0.1 || abs(glob_goal->y-glob_pose->y)>0.1 ){
-      glob_r->ros_send_movement(86,213);
-      // float angle_diff = atan((glob_goal->y - glob_pose->y)/(glob_goal->x - glob_pose->x));
-      // if(angle_diff>=glob_pose->r){
-      //   glob_r->ros_send_movement(86, 170);
-      // }else{
-      //   glob_r->ros_send_movement(43, 212);
-      // }
-    }else{
-      glob_r->ros_send_movement(0,0);
-    }
+    // if(abs(glob_goal->x-glob_pose->x)>0.1 || abs(glob_goal->y-glob_pose->y)>0.1 ){
+    //   glob_r->ros_send_movement(86,213);
+    //   // float angle_diff = atan((glob_goal->y - glob_pose->y)/(glob_goal->x - glob_pose->x));
+    //   // if(angle_diff>=glob_pose->r){
+    //   //   glob_r->ros_send_movement(86, 170);
+    //   // }else{
+    //   //   glob_r->ros_send_movement(43, 212);
+    //   // }
+    // }else{
+    //   glob_r->ros_send_movement(0,0);
+    // }
 
 
 
@@ -321,7 +325,11 @@ int main(int argc, char ** argv)
 
     glob_r = new Robot(40.0, 40.0);
 
+    glob_motor = new Motor();
+
+
     debug_file = new ofstream("/home/kin/Desktop/correct.txt");
+    estimate_file = new ofstream("/home/kin/Desktop/est.txt");
 
     // glob_r->listen_to_driver();
     // glob_r->go_straight();
@@ -358,6 +366,7 @@ int main(int argc, char ** argv)
     ros::spin();
 
     debug_file->close();
+    estimate_file->close();
     // glob_r->listen_to_driver();
 
     // pthread_join(gui_thread, NULL);

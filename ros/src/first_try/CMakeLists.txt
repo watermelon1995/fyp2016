@@ -17,6 +17,8 @@ find_package(MRPT REQUIRED base maps gui opengl)
 find_package(wxWidgets COMPONENTS core base REQUIRED)
 include(${wxWidgets_USE_FILE})
 
+MESSAGE( STATUS "MRPT_LIBRARY_DIRS: " ${MRPT_LIBRARIES})
+
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 

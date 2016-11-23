@@ -10,6 +10,8 @@
 mrpt/maps/COccupancyGridMap2D.h
 -
 
+/home/kin/fyp2016/ros/src/first_try/src/Motor.cpp
+
 /home/kin/fyp2016/ros/src/first_try/src/Robot.cpp
 SerialPort.cpp
 /home/kin/fyp2016/ros/src/first_try/src/SerialPort.cpp
@@ -79,6 +81,8 @@ geometry_msgs/PoseStamped.h
 /home/kin/fyp2016/ros/src/first_try/src/geometry_msgs/PoseStamped.h
 tf/transform_listener.h
 /home/kin/fyp2016/ros/src/first_try/src/tf/transform_listener.h
+Motor.cpp
+/home/kin/fyp2016/ros/src/first_try/src/Motor.cpp
 new_kinGui.cpp
 /home/kin/fyp2016/ros/src/first_try/src/new_kinGui.cpp
 Mapping.cpp

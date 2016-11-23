@@ -3,6 +3,7 @@
 
 first_try/CMakeFiles/new_kinMap.dir/src/new_kinMap.cpp.o
  /home/kin/fyp2016/ros/src/first_try/src/Mapping.cpp
+ /home/kin/fyp2016/ros/src/first_try/src/Motor.cpp
  /home/kin/fyp2016/ros/src/first_try/src/Robot.cpp
  /home/kin/fyp2016/ros/src/first_try/src/SerialPort.cpp
  /home/kin/fyp2016/ros/src/first_try/src/SerialPort.h

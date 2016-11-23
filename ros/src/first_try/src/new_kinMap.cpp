@@ -64,6 +64,36 @@ ofstream *debug_file;
 
 int counter = 0;
 
+
+double randn (double mu, double sigma)
+{
+  double U1, U2, W, mult;
+  static double X1, X2;
+  static int call = 0;
+
+  if (call == 1)
+    {
+      call = !call;
+      return (mu + sigma * (double) X2);
+    }
+
+  do
+    {
+      U1 = -1 + ((double) rand () / RAND_MAX) * 2;
+      U2 = -1 + ((double) rand () / RAND_MAX) * 2;
+      W = pow (U1, 2) + pow (U2, 2);
+    }
+  while (W >= 1 || W == 0);
+
+  mult = sqrt ((-2 * log (W)) / W);
+  X1 = U1 * mult;
+  X2 = U2 * mult;
+
+  call = !call;
+
+  return (mu + sigma * (double) X1);
+}
+
 float glob_random_float(float min, float max){
     // this  function assumes max > min, you may want
     // more robust error checking for a non-debug build
@@ -113,6 +143,40 @@ void compass_callback(const std_msgs::Float32::ConstPtr& compass_msg){
   // float reflected_angle = atan(-sin(compass_msg->data)/-cos(compass_msg->data));
   // cout<<"reflected_angle: "<<reflected_angle<<" D: "<<reflected_angle*180/(M_PI)<<endl;
   cout<<"original_angle: "<<compass_msg->data<<" D: "<<compass_msg->data*180/(M_PI)<<endl;
+
+  // glob_pose->r = compass_msg->data;
+
+  // float theta = compass_msg->data;
+
+  // if(front!=-1){
+  //   end_time = mrpt::system::now();
+  //   time_diff = mrpt::system::timeDifference(begin_time, end_time);
+  // }
+  // begin_time = end_time;
+  //
+  // float vl, vr, R, W;
+  // float l = 0.44;
+  //
+  // if(front==1){
+  //   for(int i = 0;i<glob_particle.size();i++){
+  //
+  //     vl = randn(0.2, 1);
+  //     vr = randn(0.3, 1);
+  //     R = (l/2)* (vl+vr) / (vr-vl);
+  //     W = (vr-vl) / l;
+  //     Position *p = glob_particle[i].get_pose();
+  //     p->x = cos(W * time_diff) * R * sin(compass_msg->data) - sin(W * time_diff) * -(R) * cos(compass_msg->data) + (p->x - R * sin(compass_msg->data));
+  //     p->y = sin(W * time_diff) * R * sin(compass_msg->data) + cos(W * time_diff) * -(R) * cos(compass_msg->data) + (p->y + R * cos(compass_msg->data));
+  //     p->r = compass_msg->data + W * time_diff;
+  //   }
+  //   cout<<"UPDATE PARTICLE"<<endl;
+  // }else if(front==0){
+  //
+  // }
+  //
+
+
+
   // if(abs(glob_goal->x-glob_pose->x)>0.1 || abs(glob_goal->y-glob_pose->y)>0.1 ){
   //   float angle_diff = atan((glob_goal->y - glob_pose->y)/(glob_goal->x - glob_pose->x));
   //   if(angle_diff>=glob_pose->r){
@@ -143,12 +207,12 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
         counter++;
       }
   }else{
-    if(front!=-1){
-      end_time = mrpt::system::now();
-      time_diff = mrpt::system::timeDifference(begin_time, end_time);
-    }
-    cout<<"Calculated : "<<time_diff <<endl;
-    float offset = 1.0f;
+    // if(front!=-1){
+    //   end_time = mrpt::system::now();
+    //   time_diff = mrpt::system::timeDifference(begin_time, end_time);
+    // }
+    // cout<<"Calculated : "<<time_diff <<endl;
+    // float offset = 1.0f;
     // if(front==0){
     //   for(int i = 0;i<glob_particle.size();i++){
     //     glob_particle[i].update_particle((-0.109)*time_diff);
@@ -159,8 +223,8 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
     //     glob_particle[i].update_particle(0.02*time_diff);
     //   }
     //   // glob_pose->y += -0.20*time_diff;
-    // }
-    begin_time = end_time;
+    // }200
+    // begin_time = end_time;
     // for (int i = 0;i<glob_particle.size();i++){
     //   glob_particle[i].update_particle(0.0);
     // }
@@ -179,8 +243,8 @@ void laser_callback(const sensor_msgs::LaserScan::ConstPtr& scan_in){
 
     cout<<"Greatest score: "<<max_score<<", i : "<<max_p<<endl;
     // glob_particle[max_p].print();
-    // best_particles_x.push_back(((glob_particle[max_p].get_pose()->x)/0.05)+200);
-    // best_particles_y.push_back(-((glob_particle[max_p].get_pose()->y)/0.05)+200);
+    best_particles_x.push_back(((glob_particle[max_p].get_pose()->x)/0.02)+500);
+    best_particles_y.push_back(-((glob_particle[max_p].get_pose()->y)/0.02)+500);
     float best_x = glob_particle[max_p].get_pose()->x;
     float best_y = glob_particle[max_p].get_pose()->y;
     float best_r = glob_particle[max_p].get_pose()->r;
@@ -316,16 +380,18 @@ int main(int argc, char ** argv)
     // glob_img_obs = mrpt::utils::CImage::Create();
 
     for(int i = 0;i < number_of_particles ; i++){
-      Particle *p = new Particle(glob_random_float(-0.5, 0.5), glob_random_float(-0.5, 0.5), 0.0 , 0.1);
+      Particle *p = new Particle(randn(-0.3, 0.3), glob_random_float(-0.3, 0.3), 0.0 , 0.1);
       glob_particle.push_back(*p);
     }
+    glob_motor = new Motor();
+
+    glob_r = new Robot(40.0, 40.0);
+
 
     hi = new kinGui();
     hi->init(&k_observer);
 
-    glob_r = new Robot(40.0, 40.0);
 
-    glob_motor = new Motor();
 
 
     debug_file = new ofstream("/home/kin/Desktop/correct.txt");

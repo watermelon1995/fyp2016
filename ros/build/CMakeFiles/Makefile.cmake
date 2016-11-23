@@ -33,8 +33,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "stdr_simulator/stdr_server/catkin_generated/ordered_paths.cmake"
   "stdr_simulator/stdr_server/catkin_generated/package.cmake"
   "stdr_simulator/stdr_simulator/catkin_generated/package.cmake"
-  "xv_11_laser_driver/catkin_generated/ordered_paths.cmake"
-  "xv_11_laser_driver/catkin_generated/package.cmake"
   "/home/kin/fyp2016/ros/devel/share/stdr_msgs/cmake/stdr_msgs-msg-extras.cmake"
   "/home/kin/fyp2016/ros/devel/share/stdr_msgs/cmake/stdr_msgs-msg-paths.cmake"
   "/home/kin/fyp2016/ros/devel/share/stdr_msgs/cmake/stdr_msgsConfig-version.cmake"
@@ -70,8 +68,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_server/test/CMakeLists.txt"
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_simulator/CMakeLists.txt"
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_simulator/package.xml"
-  "/home/kin/fyp2016/ros/src/xv_11_laser_driver/CMakeLists.txt"
-  "/home/kin/fyp2016/ros/src/xv_11_laser_driver/package.xml"
   "/opt/ros/indigo/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/indigo/share/actionlib/cmake/actionlibConfig-version.cmake"
   "/opt/ros/indigo/share/actionlib/cmake/actionlibConfig.cmake"
@@ -250,7 +246,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-2.8/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-2.8/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-2.8/Modules/Compiler/GNU.cmake"
-  "/usr/share/cmake-2.8/Modules/FindBoost.cmake"
   "/usr/share/cmake-2.8/Modules/FindGTest.cmake"
   "/usr/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-2.8/Modules/FindPackageMessage.cmake"
@@ -258,7 +253,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-2.8/Modules/FindPythonInterp.cmake"
   "/usr/share/cmake-2.8/Modules/FindQt4.cmake"
   "/usr/share/cmake-2.8/Modules/FindThreads.cmake"
-  "/usr/share/cmake-2.8/Modules/FindwxWidgets.cmake"
   "/usr/share/cmake-2.8/Modules/MacroAddFileDependencies.cmake"
   "/usr/share/cmake-2.8/Modules/MultiArchCross.cmake"
   "/usr/share/cmake-2.8/Modules/Platform/Linux-GNU-C.cmake"
@@ -269,7 +263,6 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-2.8/Modules/Qt4ConfigDependentSettings.cmake"
   "/usr/share/cmake-2.8/Modules/Qt4Macros.cmake"
   "/usr/share/cmake-2.8/Modules/UseQt4.cmake"
-  "/usr/share/cmake-2.8/Modules/UsewxWidgets.cmake"
   "/usr/share/mrpt/MRPTConfig-version.cmake"
   "/usr/share/mrpt/MRPTConfig.cmake"
   "/usr/src/gtest/CMakeLists.txt"
@@ -311,7 +304,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "stdr_simulator/stdr_server/CMakeFiles/CMakeDirectoryInformation.cmake"
   "stdr_simulator/stdr_server/test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "stdr_simulator/stdr_gui/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "xv_11_laser_driver/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -456,5 +448,4 @@ SET(CMAKE_DEPEND_INFO_FILES
   "stdr_simulator/stdr_server/test/CMakeFiles/run_tests_stdr_server_rostest.dir/DependInfo.cmake"
   "stdr_simulator/stdr_server/test/CMakeFiles/run_tests_stdr_server_rostest_test_functional_interfaces_test.launch.dir/DependInfo.cmake"
   "stdr_simulator/stdr_gui/CMakeFiles/stdr_gui_node.dir/DependInfo.cmake"
-  "xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir/DependInfo.cmake"
   )

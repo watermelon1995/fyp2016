@@ -20,6 +20,7 @@ mrpt::system::TTimeStamp end_time;
 int front = -1;
 double time_diff;
 Robot *glob_r;
+motor_command diu;
 Position *glob_goal = new Position(0.0,0.0,0.0);
 
 class kinObserver: public mrpt::utils::CObserver{
@@ -34,6 +35,8 @@ class kinObserver: public mrpt::utils::CObserver{
         }
         else if (e.isOfType<mrptEventWindowChar>())
         {
+          // glob_r = new Robot(40.0, 40.0);
+
           const mrptEventWindowChar &ee = static_cast<const mrptEventWindowChar &>(e);
           cout << "[MyObserver] Char event received from: " << ee.source_object<< ". Char code: " <<  ee.char_code << " modif: " << ee.key_modifiers << "\n";
           switch (ee.char_code) {
@@ -41,7 +44,9 @@ class kinObserver: public mrpt::utils::CObserver{
               // Q
               begin_time = mrpt::system::now();
               front= 2;
-              glob_r->ros_send_movement(86, 222);
+              diu = glob_motor->look_up_command(8.0,10.0);
+              cout<<"M1: "<<diu.m1_command<<" M2: "<<diu.m2_command<<endl;
+              glob_r->ros_send_movement(diu.m1_command, diu.m2_command);
               // glob_r->ros_send_movement()
               // pthread_mutex_lock(&mutex);
               // glob_r->turn_anticlock();
@@ -51,7 +56,9 @@ class kinObserver: public mrpt::utils::CObserver{
               // E
               begin_time = mrpt::system::now();
               front= 2;
-              glob_r->ros_send_movement(95, 213);
+              diu = glob_motor->look_up_command(8.0,10.0);
+              cout<<"M1: "<<diu.m1_command<<" M2: "<<diu.m2_command<<endl;
+              glob_r->ros_send_movement(diu.m1_command, diu.m2_command);
               // pthread_mutex_lock(&mutex);
               // glob_r->turn_clock();
               // pthread_mutex_unlock(&mutex);
@@ -61,7 +68,14 @@ class kinObserver: public mrpt::utils::CObserver{
               begin_time = mrpt::system::now();
               cout<<"begin : "<<begin_time<<endl;
               front = 1;
-              glob_r->ros_send_movement(86, 213);
+              diu = glob_motor->look_up_command(20.0,30.0);
+              cout<<"M1: "<<diu.m1_command<<" M2: "<<diu.m2_command<<endl;
+              glob_r->ros_send_movement(diu.m1_command, diu.m2_command);
+
+              // for(int i = 0;i<glob_particle.size();i++){
+              //   glob_particle[i].update_particle()
+              // }
+              // glob_r->ros_send_movement(86, 213);
               // pthread_mutex_lock(&mutex);
               // glob_r->go_straight();
               // pthread_mutex_unlock(&mutex);

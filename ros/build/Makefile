@@ -1969,19 +1969,6 @@ stdr_gui_node/fast:
 	$(MAKE) -f stdr_simulator/stdr_gui/CMakeFiles/stdr_gui_node.dir/build.make stdr_simulator/stdr_gui/CMakeFiles/stdr_gui_node.dir/build
 .PHONY : stdr_gui_node/fast
 
-#=============================================================================
-# Target rules for targets named neato_laser_publisher
-
-# Build rule for target.
-neato_laser_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 neato_laser_publisher
-.PHONY : neato_laser_publisher
-
-# fast build rule for target.
-neato_laser_publisher/fast:
-	$(MAKE) -f xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir/build.make xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir/build
-.PHONY : neato_laser_publisher/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2135,7 +2122,6 @@ help:
 	@echo "... run_tests_stdr_server_rostest"
 	@echo "... run_tests_stdr_server_rostest_test_functional_interfaces_test.launch"
 	@echo "... stdr_gui_node"
-	@echo "... neato_laser_publisher"
 .PHONY : help
 
 

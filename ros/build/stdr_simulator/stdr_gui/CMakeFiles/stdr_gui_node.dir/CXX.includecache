@@ -1550,10 +1550,6 @@ ui_sonarVisualization.h
 sensor_msgs/Range.h
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_gui/include/stdr_gui/stdr_visualization/sensor_msgs/Range.h
 
-/home/kin/fyp2016/ros/src/stdr_simulator/stdr_gui/src/stdr_gui/stdr_gui_application.cpp
-stdr_gui/stdr_gui_application.h
-/home/kin/fyp2016/ros/src/stdr_simulator/stdr_gui/src/stdr_gui/stdr_gui/stdr_gui_application.h
-
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_gui/src/stdr_gui/stdr_gui_connector.cpp
 stdr_gui/stdr_gui_connector.h
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_gui/src/stdr_gui/stdr_gui/stdr_gui_connector.h

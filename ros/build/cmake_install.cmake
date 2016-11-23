@@ -127,7 +127,6 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_samples/cmake_install.cmake")
   INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/cmake_install.cmake")
   INCLUDE("/home/kin/fyp2016/ros/build/stdr_simulator/stdr_gui/cmake_install.cmake")
-  INCLUDE("/home/kin/fyp2016/ros/build/xv_11_laser_driver/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

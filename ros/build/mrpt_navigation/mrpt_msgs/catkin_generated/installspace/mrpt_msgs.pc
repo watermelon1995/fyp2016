@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/install
+
+Name: mrpt_msgs
+Description: Description of mrpt_msgs
+Version: 0.1.15
+Cflags: -I/home/kin/fyp2016/ros/install/include
+Libs: -L/home/kin/fyp2016/ros/install/lib 
+Requires: message_runtime std_msgs geometry_msgs

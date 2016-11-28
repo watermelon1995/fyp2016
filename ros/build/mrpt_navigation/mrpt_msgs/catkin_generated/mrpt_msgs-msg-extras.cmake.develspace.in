@@ -1,0 +1,2 @@
+set(mrpt_msgs_MESSAGE_FILES "/home/kin/fyp2016/ros/src/mrpt_navigation/mrpt_msgs/msg/ObservationRangeBearing.msg;/home/kin/fyp2016/ros/src/mrpt_navigation/mrpt_msgs/msg/ObservationRangeBeacon.msg;/home/kin/fyp2016/ros/src/mrpt_navigation/mrpt_msgs/msg/SingleRangeBearingObservation.msg;/home/kin/fyp2016/ros/src/mrpt_navigation/mrpt_msgs/msg/SingleRangeBeaconObservation.msg")
+set(mrpt_msgs_SERVICE_FILES "")

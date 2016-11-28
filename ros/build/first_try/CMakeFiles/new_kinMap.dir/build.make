@@ -90,12 +90,13 @@ new_kinMap_EXTERNAL_OBJECTS =
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/libxmlrpcpp.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/libtf2.so
-/home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/libroscpp_serialization.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/librosconsole.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/librosconsole_log4cxx.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/librosconsole_backend_interface.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /usr/lib/liblog4cxx.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/libmrpt_bridge.so
+/home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/libroscpp_serialization.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/librostime.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 /home/kin/fyp2016/ros/devel/lib/first_try/new_kinMap: /opt/ros/indigo/lib/libcpp_common.so

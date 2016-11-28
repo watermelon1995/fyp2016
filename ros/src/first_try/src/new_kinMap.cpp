@@ -35,6 +35,7 @@
 #include "mrpt_bridge/time.h"
 #include "mrpt_bridge/pose.h"
 
+int use_hector = 0;
 // #include "geometry_msgs/Pose2D.h"
 ros::Publisher *glob_publish;
 ros::Publisher *glob_map_publish;
@@ -264,9 +265,15 @@ void ICP_scan_matching(const sensor_msgs::LaserScan& ros_scan){
     // original_matrix = original_matrix * trans_matrix;
     // float error = glob_pose->r - original_pose.phi();
     // WriteLock w_lock(myLock);
-    glob_pose->x = original_pose.m_coords[0];
-    glob_pose->y = original_pose.m_coords[1];
-    glob_pose->r = original_pose.phi();
+    if(use_hector==0){
+      glob_pose->x = original_pose.m_coords[0];
+      glob_pose->y = original_pose.m_coords[1];
+      glob_pose->r = original_pose.phi();
+    }else if(use_hector==2){
+      glob_pose->x = original_pose.m_coords[0];
+      glob_pose->y = original_pose.m_coords[1];
+    }
+
 
     // last_yaw2 = original_pose.phi();
 
@@ -372,9 +379,13 @@ void pose_callback(const geometry_msgs::PoseStamped::ConstPtr& pose_msg){
   //  t.getOrigin().x(), t.getOrigin().y(), yaw)
 
   // mrpt_bridge::convert(pose_msg->pose, mrpt_ref_pose);
-  // glob_pose->x =  t.getOrigin().x();
-  // glob_pose->y =  t.getOrigin().y();
-  // glob_pose->r = yaw;
+
+  if(use_hector==1){
+    glob_pose->x =  t.getOrigin().x();
+    glob_pose->y =  t.getOrigin().y();
+    glob_pose->r = yaw;
+  }
+
   // glob_pose->print();
   // glob_pose->print();
   // cout<<"frame_angle: "<<yaw<<" D: "<<yaw*180/(M_PI)<<endl;
@@ -396,7 +407,9 @@ void compass_callback(const std_msgs::Float32::ConstPtr& compass_msg){
   // cout<<"reflected_angle: "<<reflected_angle<<" D: "<<reflected_angle*180/(M_PI)<<endl;
   cout<<"original_angle: "<<compass_msg->data<<" D: "<<compass_msg->data*180/(M_PI)<<endl;
 
-  // glob_pose->r = M_PI - compass_msg->data ;
+  if(use_hector==2){
+    glob_pose->r = M_PI - compass_msg->data ;
+  }
   // glob_pose->r = 2*M_PI - compass_msg->data;
 
   // float theta = compass_msg->data;
@@ -854,9 +867,20 @@ void *start_gui(void *ptr){
 
 int main(int argc, char ** argv)
 {
+    if(argc==1){
+      use_hector = 1;
+    }else if(argc==2){
+      use_hector = 2;
+    }else{
+      use_hector = 0;
+    }
+
+    cout<<"Mode: " <<use_hector<<endl;
 
     glob_pose = new Position(0.0, 0.0, 0.0);
     my_mapping =  new Mapping(10.0, 10.0);
+
+
     // my_mapping_2 = new Mapping(10.0, 10.0);
     // k_observer.observeBegin(*(my_mapping_2->m_map));
     k_observer.observeBegin(*(my_mapping->m_map));
@@ -868,6 +892,21 @@ int main(int argc, char ** argv)
       glob_particle.push_back(*p);
     }
     glob_motor = new Motor();
+    motor_command  abc;
+    abc = glob_motor->look_up_command(5.0, 10.0);
+    cout<<"M1: "<<abc.m1_command<<" M2: "<<abc.m2_command<<endl;
+    abc = glob_motor->look_up_command(10.0, 5.0);
+    cout<<"M1: "<<abc.m1_command<<" M2: "<<abc.m2_command<<endl;
+    abc = glob_motor->look_up_command(5.0, 5.0);
+    cout<<"M1: "<<abc.m1_command<<" M2: "<<abc.m2_command<<endl;
+
+    abc = glob_motor->look_up_command(-5.0, -5.0);
+    cout<<"M1: "<<abc.m1_command<<" M2: "<<abc.m2_command<<endl;
+    abc = glob_motor->look_up_command(-5.0, 10.0);
+    cout<<"M1: "<<abc.m1_command<<" M2: "<<abc.m2_command<<endl;
+    abc = glob_motor->look_up_command(10.0, -5.0);
+    cout<<"M1: "<<abc.m1_command<<" M2: "<<abc.m2_command<<endl;
+
 
     glob_r = new Robot(40.0, 40.0);
 

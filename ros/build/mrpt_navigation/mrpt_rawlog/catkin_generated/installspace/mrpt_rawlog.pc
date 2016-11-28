@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/install
+
+Name: mrpt_rawlog
+Description: Description of mrpt_rawlog
+Version: 0.1.15
+Cflags: -I/home/kin/fyp2016/ros/install/include
+Libs: -L/home/kin/fyp2016/ros/install/lib 
+Requires: 

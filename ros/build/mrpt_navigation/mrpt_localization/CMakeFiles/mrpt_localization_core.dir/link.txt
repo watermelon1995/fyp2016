@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -Wno-long-long -Wno-variadic-macros   -shared -Wl,-soname,libmrpt_localization_core.so -o /home/kin/fyp2016/ros/devel/lib/libmrpt_localization_core.so CMakeFiles/mrpt_localization_core.dir/src/mrpt_localization/mrpt_localization_core.cpp.o -lmrpt-base -lmrpt-opengl -lmrpt-gui -lmrpt-obs -lmrpt-vision -lmrpt-tfest -lmrpt-maps -lmrpt-slam 

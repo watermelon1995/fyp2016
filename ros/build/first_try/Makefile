@@ -206,6 +206,48 @@ kinMap/fast:
 .PHONY : kinMap/fast
 
 # Convenience name for target.
+first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir/rule
+.PHONY : first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+mrpt_msgs_generate_messages_cpp: first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir/rule
+.PHONY : mrpt_msgs_generate_messages_cpp
+
+# fast build rule for target.
+mrpt_msgs_generate_messages_cpp/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir/build.make first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir/build
+.PHONY : mrpt_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir/rule
+.PHONY : first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+mrpt_msgs_generate_messages_lisp: first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir/rule
+.PHONY : mrpt_msgs_generate_messages_lisp
+
+# fast build rule for target.
+mrpt_msgs_generate_messages_lisp/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir/build.make first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir/build
+.PHONY : mrpt_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/rule
+.PHONY : first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+mrpt_msgs_generate_messages_py: first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/rule
+.PHONY : mrpt_msgs_generate_messages_py
+
+# fast build rule for target.
+mrpt_msgs_generate_messages_py/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/build
+.PHONY : mrpt_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 first_try/CMakeFiles/new_kinMap.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/new_kinMap.dir/rule
 .PHONY : first_try/CMakeFiles/new_kinMap.dir/rule
@@ -492,6 +534,9 @@ help:
 	@echo "... install/strip"
 	@echo "... kinMap"
 	@echo "... list_install_components"
+	@echo "... mrpt_msgs_generate_messages_cpp"
+	@echo "... mrpt_msgs_generate_messages_lisp"
+	@echo "... mrpt_msgs_generate_messages_py"
 	@echo "... new_kinMap"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"

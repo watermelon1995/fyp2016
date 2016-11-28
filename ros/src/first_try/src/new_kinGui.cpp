@@ -44,7 +44,7 @@ class kinObserver: public mrpt::utils::CObserver{
               // Q
               begin_time = mrpt::system::now();
               front= 2;
-              diu = glob_motor->look_up_command(8.0,10.0);
+              diu = glob_motor->look_up_command(5.0,10.0);
               cout<<"M1: "<<diu.m1_command<<" M2: "<<diu.m2_command<<endl;
               glob_r->ros_send_movement(diu.m1_command, diu.m2_command);
               // glob_r->ros_send_movement()
@@ -56,7 +56,7 @@ class kinObserver: public mrpt::utils::CObserver{
               // E
               begin_time = mrpt::system::now();
               front= 2;
-              diu = glob_motor->look_up_command(8.0,10.0);
+              diu = glob_motor->look_up_command(10.0,5.0);
               cout<<"M1: "<<diu.m1_command<<" M2: "<<diu.m2_command<<endl;
               glob_r->ros_send_movement(diu.m1_command, diu.m2_command);
               // pthread_mutex_lock(&mutex);
@@ -68,7 +68,7 @@ class kinObserver: public mrpt::utils::CObserver{
               begin_time = mrpt::system::now();
               cout<<"begin : "<<begin_time<<endl;
               front = 1;
-              diu = glob_motor->look_up_command(20.0,30.0);
+              diu = glob_motor->look_up_command(5.0,5.0);
               cout<<"M1: "<<diu.m1_command<<" M2: "<<diu.m2_command<<endl;
               glob_r->ros_send_movement(diu.m1_command, diu.m2_command);
 
@@ -170,6 +170,7 @@ class kinGui{
       // obs_2d = CDisplayWindow::Create("Sensor Observation", 200, 200);
       // gui_3d->setPos(10,10);
 
+      gui_2d->enableCursorCoordinatesVisualization(true);
       gui_2d->setPos(500, 10);
       plot->setPos(10, 10);
       // obs_2d->setPos(10, 500);

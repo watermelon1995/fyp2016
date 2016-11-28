@@ -8,11 +8,16 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
   tf
+  mrpt_bridge
+  nav_msgs
 )
 
+MESSAGE( STATUS "catkin_LIBRARIES_DIRS: " ${catkin_LIBRARIES})
 
-find_package(MRPT REQUIRED base maps gui opengl)
 
+find_package(MRPT REQUIRED base maps gui opengl slam)
+
+find_package(mrpt_bridge REQUIRED map time pose)
 
 # find_package(wxWidgets COMPONENTS core base REQUIRED)
 # include(${wxWidgets_USE_FILE})

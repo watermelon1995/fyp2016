@@ -654,14 +654,7 @@ void laser_callback(const sensor_msgs::LaserScan& scan_in){
       }
   }else{
     //
-    // tf::StampedTransform t;
-    // try{
-    //   glob_trans->lookupTransform("/map", "/robot0", ros::Time(0), t);
-    // }catch(tf::TransformException &ex){
-    //     cout<<"error: "<< &ex <<endl;
-    // }
-    // double yaw, pitch, roll;
-    // t.getBasis().getRPY(roll, pitch, yaw);
+
     //
     // // float error = glob_pose->r - yaw;
     // // WriteLock w_lock(myLock);
@@ -673,7 +666,7 @@ void laser_callback(const sensor_msgs::LaserScan& scan_in){
     // // mrpt_bridge::convert(pose_msg->pose, mrpt_ref_pose);
     // // glob_pose->x =  t.getOrigin().x();
     // // glob_pose->y =  t.getOrigin().y();
-    // glob_pose->r = yaw;
+
     // glob_pose->print();
 
     ICP_scan_matching(scan_in);
@@ -691,6 +684,15 @@ void laser_callback(const sensor_msgs::LaserScan& scan_in){
       mrpt_ref_pose.setFromValues(0, 0 , 0, 0 , 0, 0);
       mrpt_static_pose.setFromValues(0, 0 , 0, 0 , 0, 0);
 
+			// tf::StampedTransform t;
+			// try{
+			// 	glob_trans->lookupTransform("/map", "/robot0", ros::Time(0), t);
+			// }catch(tf::TransformException &ex){
+			// 		cout<<"error: "<< &ex <<endl;
+			// }
+			// double yaw, pitch, roll;
+			// t.getBasis().getRPY(roll, pitch, yaw);
+			// glob_pose->r = (0.8)*glob_pose->r + (0.2)*yaw;
 
 
     // if(front!=-1){
@@ -807,7 +809,9 @@ void laser_callback(const sensor_msgs::LaserScan& scan_in){
     //
       my_mapping->m_map->getAsImage(*glob_img, false, true, false);
       glob_img->triangle(((glob_pose->x)/0.02)+500, -((glob_pose->y)/0.02)+500,5,mrpt::utils::TColor::green, true, 2);
-      glob_img->saveToFile("/home/kin/Desktop/dilidili.jpg");
+			if(counter%20==0){
+				glob_img->saveToFile("/var/www/html/fyp/dilidili.jpg");
+			}
     //   glob_img->triangle(((glob_goal->x)/0.02)+500, -((glob_goal->y)/0.02)+500,5,mrpt::utils::TColor::blue, true, 2);
       hi->update_gui_2d(glob_img, best_particles_x, best_particles_y);
 

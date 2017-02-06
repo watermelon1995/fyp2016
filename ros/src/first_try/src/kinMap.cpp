@@ -173,9 +173,9 @@ void update_grid (int x, int y, float p){
             // For refunded map
             new_p = 1.0 - (1.0/exp(new_p));
         }
-        
+
         occ_map[y][x] = new_p;
-        
+
         // cout<<"new_p :" <<new_p<<endl;
             if(new_p>1){
                 occ_map[y][x] = 0.99;
@@ -200,7 +200,7 @@ void update_line(int x0, int x1, int y0, int y1){
     int temp_y1 = y1;
     float p;
     bool steep = abs(y1 - y0) > abs(x1 - x0);
-    
+
     if(steep){
         temp_x0 = y0;
         temp_x1 = y1;
@@ -230,11 +230,11 @@ void update_line(int x0, int x1, int y0, int y1){
     while(x!=temp_x1){
         // p = distance(x0, y0, x, y)/distance(x0,y0, x1, y1);
         p = 0.9;
-        if(steep){    
-            
+        if(steep){
+
             update_grid(y, x, p);
         }else{
-            
+
             update_grid(x, y, p);
         }
         error = error - delta_y;
@@ -268,31 +268,31 @@ void update_map(float range , double x, double y, double yaw){
     if(!isinf(range)){
         for(float cone_angle = yaw-(cone/2);cone_angle<yaw+(cone/2);cone_angle= cone_angle+0.001){
            for(float r = (range) ; r>0 ; r-=0.01){
-            
+
             //   cout<<"Angle: "<<cone_angle<<endl;
-              
+
               end_x = (int)floor(x*map_ratio + (cos(cone_angle)*r*map_ratio));
               end_y = (int)floor(y*map_ratio + (sin(cone_angle)*r*map_ratio));
 
               if(grids.find(((end_x + end_y)*(end_x + end_y + 1)/2) + end_y) == grids.end() ){
                 p = 0.1;
-                
+
                 if(r > (range-range*0.02)){
                     p = (r/range);
                     // p = p * ((abs((cone/2)-(cone_angle-yaw)))/(cone/4));
                 } else{
-                   
+
                 }
                     update_grid(end_x, end_y, p);
-                
+
                  grids.insert(((end_x + end_y)*(end_x + end_y + 1)/2) + end_y);
                 // p = (r/range)*
-                
+
                 // cout<<"update"<<endl;
-                
+
 
               }
-              
+
 
 
             //   update_line(start_x, end_x, start_y, end_y);
@@ -388,6 +388,7 @@ void sonar1_callback(const sensor_msgs::Range::ConstPtr& msg){
     }
     if(debug>50){
         update_map(msg->range, t.getOrigin().x(), t.getOrigin().y(), yaw);
+        print_bmp();
 
     }
 }

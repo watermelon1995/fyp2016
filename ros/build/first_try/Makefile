@@ -192,6 +192,34 @@ actionlib_generate_messages_py/fast:
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
+first_try/CMakeFiles/command_prepare.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/command_prepare.dir/rule
+.PHONY : first_try/CMakeFiles/command_prepare.dir/rule
+
+# Convenience name for target.
+command_prepare: first_try/CMakeFiles/command_prepare.dir/rule
+.PHONY : command_prepare
+
+# fast build rule for target.
+command_prepare/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/command_prepare.dir/build.make first_try/CMakeFiles/command_prepare.dir/build
+.PHONY : command_prepare/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/dynamic_obstacle.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/dynamic_obstacle.dir/rule
+.PHONY : first_try/CMakeFiles/dynamic_obstacle.dir/rule
+
+# Convenience name for target.
+dynamic_obstacle: first_try/CMakeFiles/dynamic_obstacle.dir/rule
+.PHONY : dynamic_obstacle
+
+# fast build rule for target.
+dynamic_obstacle/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/dynamic_obstacle.dir/build.make first_try/CMakeFiles/dynamic_obstacle.dir/build
+.PHONY : dynamic_obstacle/fast
+
+# Convenience name for target.
 first_try/CMakeFiles/kinMap.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/kinMap.dir/rule
 .PHONY : first_try/CMakeFiles/kinMap.dir/rule
@@ -246,6 +274,34 @@ mrpt_msgs_generate_messages_py: first_try/CMakeFiles/mrpt_msgs_generate_messages
 mrpt_msgs_generate_messages_py/fast:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir/build
 .PHONY : mrpt_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/mysql_test.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/mysql_test.dir/rule
+.PHONY : first_try/CMakeFiles/mysql_test.dir/rule
+
+# Convenience name for target.
+mysql_test: first_try/CMakeFiles/mysql_test.dir/rule
+.PHONY : mysql_test
+
+# fast build rule for target.
+mysql_test/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mysql_test.dir/build.make first_try/CMakeFiles/mysql_test.dir/build
+.PHONY : mysql_test/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/new_arduino_driver.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/new_arduino_driver.dir/rule
+.PHONY : first_try/CMakeFiles/new_arduino_driver.dir/rule
+
+# Convenience name for target.
+new_arduino_driver: first_try/CMakeFiles/new_arduino_driver.dir/rule
+.PHONY : new_arduino_driver
+
+# fast build rule for target.
+new_arduino_driver/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/new_arduino_driver.dir/build.make first_try/CMakeFiles/new_arduino_driver.dir/build
+.PHONY : new_arduino_driver/fast
 
 # Convenience name for target.
 first_try/CMakeFiles/new_kinMap.dir/rule:
@@ -388,6 +444,20 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+first_try/CMakeFiles/simulator_controller.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/simulator_controller.dir/rule
+.PHONY : first_try/CMakeFiles/simulator_controller.dir/rule
+
+# Convenience name for target.
+simulator_controller: first_try/CMakeFiles/simulator_controller.dir/rule
+.PHONY : simulator_controller
+
+# fast build rule for target.
+simulator_controller/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/simulator_controller.dir/build.make first_try/CMakeFiles/simulator_controller.dir/build
+.PHONY : simulator_controller/fast
+
+# Convenience name for target.
 first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : first_try/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
@@ -471,6 +541,72 @@ tf_generate_messages_py/fast:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/tf_generate_messages_py.dir/build.make first_try/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
+# Convenience name for target.
+first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_cpp: first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_lisp: first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
+
+src/fake_laser.o: src/fake_laser.cpp.o
+.PHONY : src/fake_laser.o
+
+# target to build an object file
+src/fake_laser.cpp.o:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/dynamic_obstacle.dir/build.make first_try/CMakeFiles/dynamic_obstacle.dir/src/fake_laser.cpp.o
+.PHONY : src/fake_laser.cpp.o
+
+src/fake_laser.i: src/fake_laser.cpp.i
+.PHONY : src/fake_laser.i
+
+# target to preprocess a source file
+src/fake_laser.cpp.i:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/dynamic_obstacle.dir/build.make first_try/CMakeFiles/dynamic_obstacle.dir/src/fake_laser.cpp.i
+.PHONY : src/fake_laser.cpp.i
+
+src/fake_laser.s: src/fake_laser.cpp.s
+.PHONY : src/fake_laser.s
+
+# target to generate assembly for a file
+src/fake_laser.cpp.s:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/dynamic_obstacle.dir/build.make first_try/CMakeFiles/dynamic_obstacle.dir/src/fake_laser.cpp.s
+.PHONY : src/fake_laser.cpp.s
+
 src/kinMap.o: src/kinMap.cpp.o
 .PHONY : src/kinMap.o
 
@@ -494,6 +630,54 @@ src/kinMap.s: src/kinMap.cpp.s
 src/kinMap.cpp.s:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/kinMap.dir/build.make first_try/CMakeFiles/kinMap.dir/src/kinMap.cpp.s
 .PHONY : src/kinMap.cpp.s
+
+src/motor_arduino_ros.o: src/motor_arduino_ros.cpp.o
+.PHONY : src/motor_arduino_ros.o
+
+# target to build an object file
+src/motor_arduino_ros.cpp.o:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/new_arduino_driver.dir/build.make first_try/CMakeFiles/new_arduino_driver.dir/src/motor_arduino_ros.cpp.o
+.PHONY : src/motor_arduino_ros.cpp.o
+
+src/motor_arduino_ros.i: src/motor_arduino_ros.cpp.i
+.PHONY : src/motor_arduino_ros.i
+
+# target to preprocess a source file
+src/motor_arduino_ros.cpp.i:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/new_arduino_driver.dir/build.make first_try/CMakeFiles/new_arduino_driver.dir/src/motor_arduino_ros.cpp.i
+.PHONY : src/motor_arduino_ros.cpp.i
+
+src/motor_arduino_ros.s: src/motor_arduino_ros.cpp.s
+.PHONY : src/motor_arduino_ros.s
+
+# target to generate assembly for a file
+src/motor_arduino_ros.cpp.s:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/new_arduino_driver.dir/build.make first_try/CMakeFiles/new_arduino_driver.dir/src/motor_arduino_ros.cpp.s
+.PHONY : src/motor_arduino_ros.cpp.s
+
+src/mysql_test.o: src/mysql_test.cpp.o
+.PHONY : src/mysql_test.o
+
+# target to build an object file
+src/mysql_test.cpp.o:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mysql_test.dir/build.make first_try/CMakeFiles/mysql_test.dir/src/mysql_test.cpp.o
+.PHONY : src/mysql_test.cpp.o
+
+src/mysql_test.i: src/mysql_test.cpp.i
+.PHONY : src/mysql_test.i
+
+# target to preprocess a source file
+src/mysql_test.cpp.i:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mysql_test.dir/build.make first_try/CMakeFiles/mysql_test.dir/src/mysql_test.cpp.i
+.PHONY : src/mysql_test.cpp.i
+
+src/mysql_test.s: src/mysql_test.cpp.s
+.PHONY : src/mysql_test.s
+
+# target to generate assembly for a file
+src/mysql_test.cpp.s:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/mysql_test.dir/build.make first_try/CMakeFiles/mysql_test.dir/src/mysql_test.cpp.s
+.PHONY : src/mysql_test.cpp.s
 
 src/new_kinMap.o: src/new_kinMap.cpp.o
 .PHONY : src/new_kinMap.o
@@ -519,6 +703,54 @@ src/new_kinMap.cpp.s:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/new_kinMap.dir/build.make first_try/CMakeFiles/new_kinMap.dir/src/new_kinMap.cpp.s
 .PHONY : src/new_kinMap.cpp.s
 
+src/prepare_table.o: src/prepare_table.cpp.o
+.PHONY : src/prepare_table.o
+
+# target to build an object file
+src/prepare_table.cpp.o:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/command_prepare.dir/build.make first_try/CMakeFiles/command_prepare.dir/src/prepare_table.cpp.o
+.PHONY : src/prepare_table.cpp.o
+
+src/prepare_table.i: src/prepare_table.cpp.i
+.PHONY : src/prepare_table.i
+
+# target to preprocess a source file
+src/prepare_table.cpp.i:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/command_prepare.dir/build.make first_try/CMakeFiles/command_prepare.dir/src/prepare_table.cpp.i
+.PHONY : src/prepare_table.cpp.i
+
+src/prepare_table.s: src/prepare_table.cpp.s
+.PHONY : src/prepare_table.s
+
+# target to generate assembly for a file
+src/prepare_table.cpp.s:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/command_prepare.dir/build.make first_try/CMakeFiles/command_prepare.dir/src/prepare_table.cpp.s
+.PHONY : src/prepare_table.cpp.s
+
+src/robot_movement_controller.o: src/robot_movement_controller.cpp.o
+.PHONY : src/robot_movement_controller.o
+
+# target to build an object file
+src/robot_movement_controller.cpp.o:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/simulator_controller.dir/build.make first_try/CMakeFiles/simulator_controller.dir/src/robot_movement_controller.cpp.o
+.PHONY : src/robot_movement_controller.cpp.o
+
+src/robot_movement_controller.i: src/robot_movement_controller.cpp.i
+.PHONY : src/robot_movement_controller.i
+
+# target to preprocess a source file
+src/robot_movement_controller.cpp.i:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/simulator_controller.dir/build.make first_try/CMakeFiles/simulator_controller.dir/src/robot_movement_controller.cpp.i
+.PHONY : src/robot_movement_controller.cpp.i
+
+src/robot_movement_controller.s: src/robot_movement_controller.cpp.s
+.PHONY : src/robot_movement_controller.s
+
+# target to generate assembly for a file
+src/robot_movement_controller.cpp.s:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f first_try/CMakeFiles/simulator_controller.dir/build.make first_try/CMakeFiles/simulator_controller.dir/src/robot_movement_controller.cpp.s
+.PHONY : src/robot_movement_controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -528,6 +760,8 @@ help:
 	@echo "... actionlib_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_py"
+	@echo "... command_prepare"
+	@echo "... dynamic_obstacle"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -537,6 +771,8 @@ help:
 	@echo "... mrpt_msgs_generate_messages_cpp"
 	@echo "... mrpt_msgs_generate_messages_lisp"
 	@echo "... mrpt_msgs_generate_messages_py"
+	@echo "... mysql_test"
+	@echo "... new_arduino_driver"
 	@echo "... new_kinMap"
 	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
@@ -548,6 +784,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... simulator_controller"
 	@echo "... test"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
@@ -555,12 +792,30 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... visualization_msgs_generate_messages_py"
+	@echo "... src/fake_laser.o"
+	@echo "... src/fake_laser.i"
+	@echo "... src/fake_laser.s"
 	@echo "... src/kinMap.o"
 	@echo "... src/kinMap.i"
 	@echo "... src/kinMap.s"
+	@echo "... src/motor_arduino_ros.o"
+	@echo "... src/motor_arduino_ros.i"
+	@echo "... src/motor_arduino_ros.s"
+	@echo "... src/mysql_test.o"
+	@echo "... src/mysql_test.i"
+	@echo "... src/mysql_test.s"
 	@echo "... src/new_kinMap.o"
 	@echo "... src/new_kinMap.i"
 	@echo "... src/new_kinMap.s"
+	@echo "... src/prepare_table.o"
+	@echo "... src/prepare_table.i"
+	@echo "... src/prepare_table.s"
+	@echo "... src/robot_movement_controller.o"
+	@echo "... src/robot_movement_controller.i"
+	@echo "... src/robot_movement_controller.s"
 .PHONY : help
 
 

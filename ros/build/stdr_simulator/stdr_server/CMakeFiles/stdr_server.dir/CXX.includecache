@@ -660,6 +660,46 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h
+ros/service_traits.h
+-
+stdr_msgs/MoveBoxRequest.h
+-
+stdr_msgs/MoveBoxResponse.h
+-
+
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBoxRequest.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBoxResponse.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/Noise.h
 string
 -
@@ -1281,6 +1321,10 @@ nav_msgs/OccupancyGrid.h
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_server/include/stdr_server/nav_msgs/OccupancyGrid.h
 stdr_server/map_loader.h
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_server/include/stdr_server/stdr_server/map_loader.h
+stdlib.h
+-
+time.h
+-
 
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_server/include/stdr_server/stdr_server.h
 ros/ros.h
@@ -1336,6 +1380,8 @@ stdr_msgs/DeleteSoundSource.h
 nodelet/NodeletLoad.h
 -
 nodelet/NodeletUnload.h
+-
+stdr_msgs/MoveBox.h
 -
 
 /home/kin/fyp2016/ros/src/stdr_simulator/stdr_server/src/stdr_server.cpp

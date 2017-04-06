@@ -486,6 +486,20 @@ _stdr_msgs_generate_messages_check_deps_LoadMap/fast:
 .PHONY : _stdr_msgs_generate_messages_check_deps_LoadMap/fast
 
 # Convenience name for target.
+stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir/rule:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir/rule
+.PHONY : stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir/rule
+
+# Convenience name for target.
+_stdr_msgs_generate_messages_check_deps_MoveBox: stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir/rule
+.PHONY : _stdr_msgs_generate_messages_check_deps_MoveBox
+
+# fast build rule for target.
+_stdr_msgs_generate_messages_check_deps_MoveBox/fast:
+	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir/build.make stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir/build
+.PHONY : _stdr_msgs_generate_messages_check_deps_MoveBox/fast
+
+# Convenience name for target.
 stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveRobot.dir/rule:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveRobot.dir/rule
 .PHONY : stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveRobot.dir/rule
@@ -1243,6 +1257,7 @@ help:
 	@echo "... _stdr_msgs_generate_messages_check_deps_LaserSensorMsg"
 	@echo "... _stdr_msgs_generate_messages_check_deps_LoadExternalMap"
 	@echo "... _stdr_msgs_generate_messages_check_deps_LoadMap"
+	@echo "... _stdr_msgs_generate_messages_check_deps_MoveBox"
 	@echo "... _stdr_msgs_generate_messages_check_deps_MoveRobot"
 	@echo "... _stdr_msgs_generate_messages_check_deps_Noise"
 	@echo "... _stdr_msgs_generate_messages_check_deps_RegisterGui"

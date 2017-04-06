@@ -51,6 +51,7 @@ FILE(REMOVE_RECURSE
   "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddCO2Source.py"
   "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteThermalSource.py"
   "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddRfidTag.py"
+  "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py"
   "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py"
   "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py"
   "/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py"

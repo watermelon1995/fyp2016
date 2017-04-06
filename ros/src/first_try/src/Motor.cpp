@@ -1,3 +1,5 @@
+using namespace std;
+
 struct motor_command{
   int m1_command;
   int m2_command;
@@ -143,6 +145,21 @@ class Motor{
       }
     }
 
+    void print_debug(){
+      for (int i = 0 ; i < 256 ; i++){
+        std::cout << "i: "<< i << " s: " << speed[i] << std::endl;
+      }
+    }
+
+    void save_file(){
+      ofstream motor_data;
+      motor_data.open("/home/kin/Desktop/motor_config.txt");
+      for (int i = 0 ; i < 255 ; i++){
+        motor_data << speed[i] << " , ";
+      }
+      motor_data << speed[255];
+      motor_data.close();
+    }
 
     motor_command look_up_command(float m1_speed, float m2_speed){
       motor_command m;

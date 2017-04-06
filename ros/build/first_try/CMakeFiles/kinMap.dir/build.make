@@ -81,6 +81,8 @@ kinMap_EXTERNAL_OBJECTS =
 
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: first_try/CMakeFiles/kinMap.dir/src/kinMap.cpp.o
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: first_try/CMakeFiles/kinMap.dir/build.make
+/home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libmrpt_bridge.so
+/home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libinteractive_markers.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libtf.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libtf2_ros.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libactionlib.so
@@ -95,7 +97,6 @@ kinMap_EXTERNAL_OBJECTS =
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/librosconsole_backend_interface.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /usr/lib/liblog4cxx.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libmrpt_bridge.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/libroscpp_serialization.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /opt/ros/indigo/lib/librostime.so
 /home/kin/fyp2016/ros/devel/lib/first_try/kinMap: /usr/lib/x86_64-linux-gnu/libboost_date_time.so

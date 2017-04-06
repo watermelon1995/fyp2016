@@ -51,6 +51,7 @@ FILE(REMOVE_RECURSE
   "/home/kin/fyp2016/ros/devel/include/stdr_msgs/AddCO2Source.h"
   "/home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteThermalSource.h"
   "/home/kin/fyp2016/ros/devel/include/stdr_msgs/AddRfidTag.h"
+  "/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h"
   "/home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h"
   "/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveRobot.h"
   "/home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteRfidTag.h"

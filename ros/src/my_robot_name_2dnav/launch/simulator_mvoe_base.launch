@@ -1,0 +1,30 @@
+<launch>
+  <master auto="start"/>
+
+  <!-- Run the Rviz -->
+  <node pkg="rviz" type="rviz" name="rviz"
+    args="-d /home/kin/.rviz/nav_simulator.rviz"/>
+
+
+
+  <!-- Run the map server -->
+  <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(find my_map_package)/my_map.pgm my_map_resolution"/> -->
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping">
+    <remap from="scan" to="/robot0/laser_0" />
+    <remap from="map" to="/gmapping/map" />
+    <param name="base_frame" value="/robot0" />
+  </node>
+  <!--- Run AMCL -->
+  <!-- <include file="$(find amcl)/examples/amcl_omni.launch" /> -->
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <remap from="cmd_vel" to="/robot0/cmd_vel" />
+    <remap from="odom" to="/robot0/odom" />
+    <rosparam file="$(find my_robot_name_2dnav)/info/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find my_robot_name_2dnav)/info/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find my_robot_name_2dnav)/info/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_robot_name_2dnav)/info/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_robot_name_2dnav)/info/base_local_planner_params.yaml" command="load" />
+  </node>
+</launch>

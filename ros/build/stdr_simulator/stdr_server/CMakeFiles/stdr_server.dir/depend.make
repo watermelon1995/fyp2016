@@ -44,6 +44,9 @@ stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /ho
 stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/LoadMap.h
 stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/LoadMapRequest.h
 stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/LoadMapResponse.h
+stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h
+stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBoxRequest.h
+stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBoxResponse.h
 stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/Noise.h
 stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h
 stdr_simulator/stdr_server/CMakeFiles/stdr_server.dir/src/stdr_server.cpp.o: /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGuiRequest.h

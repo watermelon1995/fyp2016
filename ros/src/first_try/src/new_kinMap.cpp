@@ -167,6 +167,7 @@ bool self_convert(const sensor_msgs::LaserScan &_msg, const mrpt::poses::CPose3D
 }
 
 
+
 void ICP_scan_matching(const sensor_msgs::LaserScan& ros_scan){
   CSimplePointsMap		m1,m2;
   float					runningTime;

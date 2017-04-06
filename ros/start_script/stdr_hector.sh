@@ -1,0 +1,1 @@
+roslaunch hector_slam_launch stdr_simulator.launch

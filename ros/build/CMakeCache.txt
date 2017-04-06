@@ -284,6 +284,15 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //The directory containing a CMake configuration file for MRPT.
 MRPT_DIR:PATH=/usr/share/mrpt
 
+//Path to a file.
+MYSQLCONNECTORCPP_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+MYSQLCONNECTORCPP_LIBRARY:FILEPATH=/usr/lib/libmysqlcppconn.so
+
+///home/kin/Desktop/mysql-connector-c++-1.1.8-linux-glibc2.5-x86-64bit
+MYSQLCONNECTORCPP_ROOT_DIR:PATH=
+
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
@@ -1035,6 +1044,9 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for interactive_markers.
+interactive_markers_DIR:PATH=/opt/ros/indigo/share/interactive_markers/cmake
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/indigo/lib/libxmlrpcpp.so
 
@@ -1049,6 +1061,9 @@ message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for move_base.
+move_base_DIR:PATH=/opt/ros/indigo/share/move_base/cmake
 
 //The directory containing a CMake configuration file for mrpt.
 mrpt_DIR:PATH=mrpt_DIR-NOTFOUND
@@ -1124,6 +1139,15 @@ mrpt_tutorials_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/mrpt_navigation/mrp
 
 //Value Computed by CMake
 mrpt_tutorials_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/mrpt_navigation/mrpt_tutorials
+
+//The directory containing a CMake configuration file for my_odom_configuration_dep.
+my_odom_configuration_dep_DIR:PATH=my_odom_configuration_dep_DIR-NOTFOUND
+
+//Value Computed by CMake
+my_robot_name_2dnav_BINARY_DIR:STATIC=/home/kin/fyp2016/ros/build/my_robot_name_2dnav
+
+//Value Computed by CMake
+my_robot_name_2dnav_SOURCE_DIR:STATIC=/home/kin/fyp2016/ros/src/my_robot_name_2dnav
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/indigo/share/nav_msgs/cmake
@@ -1461,7 +1485,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=14
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1502,6 +1526,8 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding MysqlConnectorCpp
+FIND_PACKAGE_MESSAGE_DETAILS_MysqlConnectorCpp:INTERNAL=[/usr/include][/usr/lib/libmysqlcppconn.so][v()]
 //Details about finding PCL
 FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libpthread.so;optimized;/usr/lib/libpcl_common.so;debug;/usr/lib/libpcl_common.so;optimized;/usr/lib/libpcl_octree.so;debug;/usr/lib/libpcl_octree.so;/usr/lib/libOpenNI.so;vtkCommon;vtkRendering;vtkHybrid;vtkCharts;optimized;/usr/lib/libpcl_io.so;debug;/usr/lib/libpcl_io.so;/usr/lib/x86_64-linux-gnu/libboost_system.so;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;/usr/lib/x86_64-linux-gnu/libboost_thread.so;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;/usr/lib/x86_64-linux-gnu/libboost_iostreams.so;/usr/lib/x86_64-linux-gnu/libboost_serialization.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/libOpenNI.so;vtkCommon;vtkRendering;vtkHybrid;vtkCharts][/usr/include/pcl-1.7;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/vtk-5.8][v(1.3)]
 //Details about finding PCL_COMMON
@@ -1543,6 +1569,12 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MYSQLCONNECTORCPP_INCLUDE_DIR
+MYSQLCONNECTORCPP_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MYSQLCONNECTORCPP_LIBRARY
+MYSQLCONNECTORCPP_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MYSQLCONNECTORCPP_ROOT_DIR
+MYSQLCONNECTORCPP_ROOT_DIR-ADVANCED:INTERNAL=1
 NEW_YAMLCPP_CFLAGS:INTERNAL=
 NEW_YAMLCPP_CFLAGS_I:INTERNAL=
 NEW_YAMLCPP_CFLAGS_OTHER:INTERNAL=

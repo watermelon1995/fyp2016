@@ -26,6 +26,7 @@
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_LaserSensorMsg.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_LoadExternalMap.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_LoadMap.dir
+/home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveBox.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_MoveRobot.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_Noise.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/_stdr_msgs_generate_messages_check_deps_RegisterGui.dir
@@ -70,8 +71,14 @@
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/bond_generate_messages_py.dir
 /home/kin/fyp2016/ros/build/CMakeFiles/clean_test_results.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/test/CMakeFiles/clean_test_results_stdr_server.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/command_prepare.dir
 /home/kin/fyp2016/ros/build/CMakeFiles/download_extra_data.dir
 /home/kin/fyp2016/ros/build/CMakeFiles/doxygen.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/dynamic_obstacle.dir
+/home/kin/fyp2016/ros/build/my_robot_name_2dnav/CMakeFiles/dynamic_reconfigure_gencfg.dir
+/home/kin/fyp2016/ros/build/my_robot_name_2dnav/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir
+/home/kin/fyp2016/ros/build/my_robot_name_2dnav/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir
+/home/kin/fyp2016/ros/build/my_robot_name_2dnav/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir
@@ -79,13 +86,16 @@
 /home/kin/fyp2016/ros/build/gtest/CMakeFiles/gtest_main.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/kinMap.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/CMakeFiles/load_map.dir
+/home/kin/fyp2016/ros/build/my_robot_name_2dnav/CMakeFiles/move_base_gencfg.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/mrpt_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/mrpt_msgs_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/mrpt_msgs_generate_messages_py.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/mysql_test.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir
 /home/kin/fyp2016/ros/build/xv_11_laser_driver/CMakeFiles/neato_laser_publisher.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/new_arduino_driver.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/new_kinMap.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/nodelet_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_robot/CMakeFiles/nodelet_generate_messages_lisp.dir
@@ -104,6 +114,7 @@
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/sensor_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/sensor_msgs_generate_messages_py.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/simulator_controller.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs/CMakeFiles/std_msgs_generate_messages_py.dir
@@ -139,6 +150,6 @@
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/tf_generate_messages_cpp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/tf_generate_messages_lisp.dir
 /home/kin/fyp2016/ros/build/first_try/CMakeFiles/tf_generate_messages_py.dir
-/home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir
-/home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir
-/home/kin/fyp2016/ros/build/stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/visualization_msgs_generate_messages_cpp.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/visualization_msgs_generate_messages_lisp.dir
+/home/kin/fyp2016/ros/build/first_try/CMakeFiles/visualization_msgs_generate_messages_py.dir

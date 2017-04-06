@@ -10,6 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   mrpt_bridge
   nav_msgs
+  visualization_msgs
+  interactive_markers
 )
 
 MESSAGE( STATUS "catkin_LIBRARIES_DIRS: " ${catkin_LIBRARIES})
@@ -25,8 +27,66 @@ find_package(mrpt_bridge REQUIRED map time pose)
 # MESSAGE( STATUS "MRPT_LIBRARY_DIRS: " ${MRPT_LIBRARIES})
 
 ## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS thread)
 
+set(MYSQLCONNECTORCPP_ROOT_DIR
+        "${MYSQLCONNECTORCPP_ROOT_DIR}"
+        CACHE
+        PATH
+        "/home/kin/Desktop/mysql-connector-c++-1.1.8-linux-glibc2.5-x86-64bit")
+
+if(WIN32)
+    find_path(MYSQLCONNECTORCPP_INCLUDE_DIR
+            NAMES
+            mysql_connection.h
+            PATHS
+            "C:\\Program Files"
+            HINTS
+            ${MYSQLCONNECTORCPP_ROOT_DIR}
+            PATH_SUFFIXES
+            include)
+
+    find_library(MYSQLCONNECTORCPP_LIBRARY
+            NAMES
+            mysqlcppconn
+            mysqlcppconn-static
+            HINTS
+            ${MYSQLCONNECTORCPP_ROOT_DIR}
+            PATH_SUFFIXES
+            lib)
+
+else()
+    find_path(MYSQLCONNECTORCPP_INCLUDE_DIR
+            mysql_connection.h
+            HINTS
+            ${MYSQLCONNECTORCPP_ROOT_DIR}
+            PATH_SUFFIXES
+            include)
+
+    find_library(MYSQLCONNECTORCPP_LIBRARY
+            NAMES
+            mysqlcppconn
+            mysqlcppconn-static
+            HINTS
+            ${MYSQLCONNECTORCPP_ROOT_DIR}
+            PATH_SUFFIXES
+            lib64
+            lib)
+endif()
+
+mark_as_advanced(MYSQLCONNECTORCPP_INCLUDE_DIR MYSQLCONNECTORCPP_LIBRARY)
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(MysqlConnectorCpp
+        DEFAULT_MSG
+        MYSQLCONNECTORCPP_INCLUDE_DIR
+        MYSQLCONNECTORCPP_LIBRARY)
+
+if(MYSQLCONNECTORCPP_FOUND)
+    set(MYSQLCONNECTORCPP_INCLUDE_DIRS "${MYSQLCONNECTORCPP_INCLUDE_DIR}") # Add any dependencies here
+    set(MYSQLCONNECTORCPP_LIBRARIES "${MYSQLCONNECTORCPP_LIBRARY}") # Add any dependencies here
+    mark_as_advanced(MYSQLCONNECTORCPP_ROOT_DIR)
+endif()
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -220,6 +280,27 @@ add_dependencies(kinMap first_try_generate_messages_cpp)
 add_executable(new_kinMap src/new_kinMap.cpp)
 target_link_libraries(new_kinMap ${catkin_LIBRARIES} ${MRPT_LIBRARIES})
 add_dependencies(new_kinMap first_try_generate_messages_cpp)
+
+add_executable(simulator_controller src/robot_movement_controller.cpp)
+target_link_libraries(simulator_controller ${catkin_LIBRARIES} ${MRPT_LIBRARIES})
+add_dependencies(simulator_controller first_try_generate_messages_cpp)
+
+add_executable(dynamic_obstacle src/fake_laser.cpp)
+target_link_libraries(dynamic_obstacle ${catkin_LIBRARIES} ${MRPT_LIBRARIES})
+add_dependencies(dynamic_obstacle first_try_generate_messages_cpp)
+
+add_executable(command_prepare src/prepare_table.cpp)
+target_link_libraries(command_prepare ${catkin_LIBRARIES} ${MRPT_LIBRARIES} mysqlcppconn)
+add_dependencies(command_prepare first_try_generate_messages_cpp)
+
+add_executable(mysql_test src/mysql_test.cpp)
+target_link_libraries(mysql_test ${catkin_LIBRARIES} ${MRPT_LIBRARIES} mysqlcppconn)
+add_dependencies(mysql_test first_try_generate_messages_cpp)
+
+add_executable(new_arduino_driver src/motor_arduino_ros.cpp)
+target_link_libraries(new_arduino_driver ${catkin_LIBRARIES} ${MRPT_LIBRARIES} )
+add_dependencies(new_arduino_driver first_try_generate_messages_cpp)
+
 
 # add_executable(controller src/controller_gui.cpp)
 # target_link_libraries(controller ${catkin_LIBRARIES} ${MRPT_LIBRARIES} ${wxWidgets_LIBRARIES})

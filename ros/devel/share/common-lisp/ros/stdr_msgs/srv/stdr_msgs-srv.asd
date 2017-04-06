@@ -31,4 +31,6 @@
     (:file "_package_DeleteRfidTag" :depends-on ("_package"))
     (:file "AddCO2Source" :depends-on ("_package_AddCO2Source"))
     (:file "_package_AddCO2Source" :depends-on ("_package"))
+    (:file "MoveBox" :depends-on ("_package_MoveBox"))
+    (:file "_package_MoveBox" :depends-on ("_package"))
   ))

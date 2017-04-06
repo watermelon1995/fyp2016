@@ -1,0 +1,8 @@
+prefix=/home/kin/fyp2016/ros/install
+
+Name: my_robot_name_2dnav
+Description: Description of my_robot_name_2dnav
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kin/fyp2016/ros/install/lib 
+Requires: 

@@ -8,5 +8,6 @@ from ._DeleteSoundSource import *
 from ._DeleteThermalSource import *
 from ._LoadExternalMap import *
 from ._LoadMap import *
+from ._MoveBox import *
 from ._MoveRobot import *
 from ._RegisterGui import *

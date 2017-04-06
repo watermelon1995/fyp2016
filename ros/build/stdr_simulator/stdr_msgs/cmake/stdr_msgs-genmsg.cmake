@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "stdr_msgs: 45 messages, 12 services")
+message(STATUS "stdr_msgs: 45 messages, 13 services")
 
 set(MSG_I_FLAGS "-Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg;-Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg")
 
@@ -68,6 +68,11 @@ add_custom_target(_stdr_msgs_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMeasurementMsg.msg" NAME_WE)
 add_custom_target(_stdr_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stdr_msgs" "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMeasurementMsg.msg" "std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv" NAME_WE)
+add_custom_target(_stdr_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "stdr_msgs" "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv" ""
 )
 
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg" NAME_WE)
@@ -615,6 +620,12 @@ _generate_srv_cpp(stdr_msgs
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stdr_msgs
 )
 _generate_srv_cpp(stdr_msgs
+  "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/stdr_msgs
+)
+_generate_srv_cpp(stdr_msgs
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv"
   "${MSG_I_FLAGS}"
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/CO2SensorMsg.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/KinematicMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RfidSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/FootprintMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SoundSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SonarSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/Noise.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotIndexedMsg.msg"
@@ -684,6 +695,8 @@ add_dependencies(stdr_msgs_generate_messages_cpp _stdr_msgs_generate_messages_ch
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMsg.msg" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_cpp _stdr_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMeasurementMsg.msg" NAME_WE)
+add_dependencies(stdr_msgs_generate_messages_cpp _stdr_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_cpp _stdr_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_cpp _stdr_msgs_generate_messages_check_deps_${_filename})
@@ -1096,6 +1109,12 @@ _generate_srv_lisp(stdr_msgs
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stdr_msgs
 )
 _generate_srv_lisp(stdr_msgs
+  "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/stdr_msgs
+)
+_generate_srv_lisp(stdr_msgs
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv"
   "${MSG_I_FLAGS}"
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/CO2SensorMsg.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/KinematicMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RfidSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/FootprintMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SoundSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SonarSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/Noise.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotIndexedMsg.msg"
@@ -1165,6 +1184,8 @@ add_dependencies(stdr_msgs_generate_messages_lisp _stdr_msgs_generate_messages_c
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMsg.msg" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_lisp _stdr_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMeasurementMsg.msg" NAME_WE)
+add_dependencies(stdr_msgs_generate_messages_lisp _stdr_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_lisp _stdr_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_lisp _stdr_msgs_generate_messages_check_deps_${_filename})
@@ -1577,6 +1598,12 @@ _generate_srv_py(stdr_msgs
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stdr_msgs
 )
 _generate_srv_py(stdr_msgs
+  "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/stdr_msgs
+)
+_generate_srv_py(stdr_msgs
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv"
   "${MSG_I_FLAGS}"
   "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/CO2SensorMsg.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/KinematicMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RfidSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/FootprintMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SoundSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SonarSensorMsg.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/Noise.msg;/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotIndexedMsg.msg"
@@ -1646,6 +1673,8 @@ add_dependencies(stdr_msgs_generate_messages_py _stdr_msgs_generate_messages_che
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMsg.msg" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_py _stdr_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSensorMeasurementMsg.msg" NAME_WE)
+add_dependencies(stdr_msgs_generate_messages_py _stdr_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_py _stdr_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/LaserSensorMsg.msg" NAME_WE)
 add_dependencies(stdr_msgs_generate_messages_py _stdr_msgs_generate_messages_check_deps_${_filename})

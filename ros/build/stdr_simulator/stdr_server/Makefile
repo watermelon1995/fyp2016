@@ -219,48 +219,6 @@ stdr_server_node/fast:
 	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_server/CMakeFiles/stdr_server_node.dir/build.make stdr_simulator/stdr_server/CMakeFiles/stdr_server_node.dir/build
 .PHONY : stdr_server_node/fast
 
-# Convenience name for target.
-stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_cpp: stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : visualization_msgs_generate_messages_cpp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f CMakeFiles/Makefile2 stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/kin/fyp2016/ros/build && $(MAKE) -f stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make stdr_simulator/stdr_server/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
 src/map_loader.o: src/map_loader.cpp.o
 .PHONY : src/map_loader.o
 
@@ -399,9 +357,6 @@ help:
 	@echo "... stdr_server"
 	@echo "... stdr_server_node"
 	@echo "... test"
-	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... src/map_loader.o"
 	@echo "... src/map_loader.i"
 	@echo "... src/map_loader.s"

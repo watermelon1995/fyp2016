@@ -75,6 +75,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv"
     "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddCO2Source.srv"
     "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteCO2Source.srv"
+    "/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

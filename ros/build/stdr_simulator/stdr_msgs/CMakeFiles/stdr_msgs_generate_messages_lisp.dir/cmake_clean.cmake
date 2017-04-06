@@ -51,6 +51,7 @@ FILE(REMOVE_RECURSE
   "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddCO2Source.lisp"
   "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteThermalSource.lisp"
   "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddRfidTag.lisp"
+  "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveBox.lisp"
   "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp"
   "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveRobot.lisp"
   "/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteRfidTag.lisp"

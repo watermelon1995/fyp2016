@@ -96,6 +96,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddCO2Source.py
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteThermalSource.py
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddRfidTag.py
+stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py
@@ -641,6 +642,12 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/AddRfidTag"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddRfidTag.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
+/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/MoveBox"
+	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
+
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/CO2SensorMsg.msg
@@ -656,20 +663,20 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SonarSensorMsg.msg
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/Noise.msg
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotIndexedMsg.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/RegisterGui"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveRobot.srv
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/MoveRobot"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveRobot.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteRfidTag.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/DeleteRfidTag"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteRfidTag.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
@@ -677,13 +684,13 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddThermalSource.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddThermalSource.srv
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddThermalSource.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSource.msg
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddThermalSource.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/AddThermalSource"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddThermalSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteSoundSource.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteSoundSource.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/DeleteSoundSource"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
@@ -691,7 +698,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddSoundSource.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddSoundSource.srv
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddSoundSource.py: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SoundSource.msg
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddSoundSource.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV stdr_msgs/AddSoundSource"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddSoundSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv
 
@@ -747,13 +754,14 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddCO2Source.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteThermalSource.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddRfidTag.py
+/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddThermalSource.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteSoundSource.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddSoundSource.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for stdr_msgs"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/msg --initpy
 
@@ -809,13 +817,14 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_py: /home/kin/fy
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddCO2Source.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteThermalSource.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddRfidTag.py
+/home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddThermalSource.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteSoundSource.py
 /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/__init__.py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddSoundSource.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for stdr_msgs"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv --initpy
 
@@ -871,6 +880,7 @@ stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-p
 stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddCO2Source.py
 stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteThermalSource.py
 stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_AddRfidTag.py
+stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveBox.py
 stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_RegisterGui.py
 stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_MoveRobot.py
 stdr_msgs_generate_messages_py: /home/kin/fyp2016/ros/devel/lib/python2.7/dist-packages/stdr_msgs/srv/_DeleteRfidTag.py

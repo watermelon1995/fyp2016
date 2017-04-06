@@ -96,6 +96,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddCO2Source.h
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteThermalSource.h
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddRfidTag.h
+stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveRobot.h
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteRfidTag.h
@@ -696,6 +697,14 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/AddRfidTag.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddRfidTag.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+/home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/MoveBox.srv"
+	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
+
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/CO2SensorMsg.msg
@@ -713,7 +722,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotIndexedMsg.msg
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/RegisterGui.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -722,7 +731,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveRobot.h: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveRobot.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveRobot.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/MoveRobot.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveRobot.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -730,7 +739,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteRfidTag.h: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteRfidTag.srv
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteRfidTag.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteRfidTag.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/DeleteRfidTag.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteRfidTag.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -740,7 +749,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddThermalSource.h: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddThermalSource.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddThermalSource.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/AddThermalSource.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddThermalSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -748,7 +757,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteSoundSource.h: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteSoundSource.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteSoundSource.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/DeleteSoundSource.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -758,7 +767,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_cpp: /home/kin/f
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddSoundSource.h: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddSoundSource.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
 /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddSoundSource.h: /opt/ros/indigo/share/gencpp/cmake/../srv.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from stdr_msgs/AddSoundSource.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddSoundSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/include/stdr_msgs -e /opt/ros/indigo/share/gencpp/cmake/..
 
@@ -814,6 +823,7 @@ stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/L
 stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddCO2Source.h
 stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteThermalSource.h
 stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/AddRfidTag.h
+stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveBox.h
 stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/RegisterGui.h
 stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/MoveRobot.h
 stdr_msgs_generate_messages_cpp: /home/kin/fyp2016/ros/devel/include/stdr_msgs/DeleteRfidTag.h

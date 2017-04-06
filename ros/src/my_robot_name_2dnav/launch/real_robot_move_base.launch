@@ -1,0 +1,35 @@
+<launch>
+  <master auto="start"/>
+
+  <node pkg="first_try" type="new_arduino_driver" name="arduino_driver" />
+
+  <node pkg="xv_11_laser_driver"  type="neato_laser_publisher" name="laser_driver">
+    <param name="port" value="/dev/ttyUSB0" />
+    <param name="firmware_version" value="2" />
+    <!-- <param name="frame_id" value="laser" /> -->
+  </node>
+
+
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /odom /base_link 10"/> -->
+
+  <!-- <node pkg="hector" -->
+
+  <node pkg="tf" type="static_transform_publisher" name="base_frame_laser" args="0 0 0 -1.57 0 0 /base_link /laser 100"/>
+
+  <include file="$(find hector_mapping)/launch/mapping_real_robot.launch"/>
+
+  <include file="$(find hector_geotiff)/launch/geotiff_mapper.launch"/>
+
+
+  <!--- Run AMCL -->
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <remap from="cmd_vel" to="/robot_cmd_vel" />
+    <rosparam file="$(find my_robot_name_2dnav)/info_real_robot/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find my_robot_name_2dnav)/info_real_robot/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find my_robot_name_2dnav)/info_real_robot/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_robot_name_2dnav)/info_real_robot/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find my_robot_name_2dnav)/info_real_robot/base_local_planner_params.yaml" command="load" />
+  </node>
+</launch>

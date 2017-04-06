@@ -96,6 +96,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddCO2Source.lisp
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteThermalSource.lisp
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddRfidTag.lisp
+stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveBox.lisp
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveRobot.lisp
 stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteRfidTag.lisp
@@ -639,6 +640,12 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/AddRfidTag.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddRfidTag.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
+/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveBox.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveBox.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/MoveBox.srv"
+	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveBox.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
+
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/CO2SensorMsg.msg
@@ -654,20 +661,20 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SonarSensorMsg.msg
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/Noise.msg
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/RobotIndexedMsg.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/RegisterGui.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/RegisterGui.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveRobot.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveRobot.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveRobot.srv
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveRobot.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/MoveRobot.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/MoveRobot.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteRfidTag.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteRfidTag.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteRfidTag.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/DeleteRfidTag.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteRfidTag.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
@@ -675,13 +682,13 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddThermalSource.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddThermalSource.srv
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddThermalSource.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/ThermalSource.msg
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddThermalSource.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/AddThermalSource.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddThermalSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteSoundSource.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteSoundSource.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/DeleteSoundSource.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/DeleteSoundSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
@@ -689,7 +696,7 @@ stdr_simulator/stdr_msgs/CMakeFiles/stdr_msgs_generate_messages_lisp: /home/kin/
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddSoundSource.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddSoundSource.srv
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddSoundSource.lisp: /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg/SoundSource.msg
 /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddSoundSource.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose2D.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/kin/fyp2016/ros/build/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from stdr_msgs/AddSoundSource.srv"
 	cd /home/kin/fyp2016/ros/build/stdr_simulator/stdr_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/srv/AddSoundSource.srv -Istdr_msgs:/home/kin/fyp2016/ros/src/stdr_simulator/stdr_msgs/msg -Istdr_msgs:/home/kin/fyp2016/ros/devel/share/stdr_msgs/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg -p stdr_msgs -o /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv
 
@@ -745,6 +752,7 @@ stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/
 stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddCO2Source.lisp
 stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteThermalSource.lisp
 stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/AddRfidTag.lisp
+stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveBox.lisp
 stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/RegisterGui.lisp
 stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/MoveRobot.lisp
 stdr_msgs_generate_messages_lisp: /home/kin/fyp2016/ros/devel/share/common-lisp/ros/stdr_msgs/srv/DeleteRfidTag.lisp
